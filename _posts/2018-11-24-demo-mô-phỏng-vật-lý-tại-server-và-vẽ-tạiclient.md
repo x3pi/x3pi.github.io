@@ -1,5 +1,5 @@
 ---
-title: Demo mô phỏng vật lý tại server và vẽ tạiclient
+title: Demo mô phỏng vật lý tại server và vẽ tại client
 date: 2018-11-24 12:52:15 +0000
 layout: post
 tags:
