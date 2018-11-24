@@ -1,0 +1,23 @@
+---
+title: Pi
+timezone: Asia/Ho_Chi_Minh
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+email: x2p3141@gmail.com
+facebook: XX2Pi
+description: My blog
+baseurl: ''
+url: x3pi.github.io
+github_username: x2pi
+markdown: kramdown
+permalink: pretty
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
