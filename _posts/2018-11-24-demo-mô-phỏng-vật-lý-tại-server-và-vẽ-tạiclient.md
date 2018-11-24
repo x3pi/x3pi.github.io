@@ -12,7 +12,8 @@ tags:
 
 Demo mô phỏng vật lý bằng server và render tại client sử dụng nodejs, socket.io, matter-js ...
 
-!\[screen\](/screen/screen.gif)
+  
+![](/uploads/screen.gif)
 
 \## Cài đặt
 
