@@ -1,7 +1,7 @@
 ---
 label: Cách duy nhất để hiểu một người là ở bên người ấy đủ lâu.
-hide_body: 
-is_partial: 
+hide_body: false
+is_partial: false
 fields:
 - name: layout
   label: Layout
@@ -15,11 +15,6 @@ fields:
   default: ''
 - name: date
   label: Date
-  type: datetime
-  hidden: false
-  default: ''
-- name: creationdate
-  label: Creationdate
   type: datetime
   hidden: false
   default: ''
