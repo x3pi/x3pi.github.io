@@ -13,7 +13,7 @@ facebook: XX2Pi
 description: My blog
 baseurl: ''
 url: x3pi.github.io
-github_username: x2pi
+github_username: x3pi
 markdown: kramdown
 permalink: pretty
 highlighter: rouge
