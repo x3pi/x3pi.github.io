@@ -14,7 +14,7 @@ tags: []
 
 ### Career objective
 
-I am currently looking for a web development or game development job.
+* I am currently looking for a web development or game development job.
 
 ### Highlights
 
