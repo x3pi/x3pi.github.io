@@ -7,4 +7,4 @@ tags: []
 ---
 ### Personal
 
-Van Phuc, born and grown in Nghe An (Vietnam), currently living in San Francisco, California. 
+Van Phuc, born and grown in Nghe An (Vietnam), currently living in Ha Noi. 
