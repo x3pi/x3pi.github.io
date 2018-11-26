@@ -19,7 +19,7 @@ tags: []
 ### Highlights
 
 * Written **4+** articles and tutorials.
-* Leaving university top Vietnam and leaving an internship at company top Vietnam. Of course, no damage. :D
+* Leaving university top Vietnam and leaving an internship job at company top Vietnam. Of course, no damage. :D
 
 ### Skills
 
