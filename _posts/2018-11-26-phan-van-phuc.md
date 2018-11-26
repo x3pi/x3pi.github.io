@@ -14,7 +14,7 @@ tags: []
 
 ### Career objective
 
-* I am currently looking for a web development or game development job.
+* I am currently looking for a web development with nodejs or game development job.
 
 ### Highlights
 
@@ -24,7 +24,7 @@ tags: []
 ### Skills
 
 * Computer graphics, web full-stack, game development.
-* C/C++, HTML5, CSS, Javascript, Nodejs, OpenGL, WebGL, Unity3D...
+* C/C++, HTML5, CSS, Javascript, NodeJs, OpenGL, WebGL, Unity3D...
 
 ### Projects
 
