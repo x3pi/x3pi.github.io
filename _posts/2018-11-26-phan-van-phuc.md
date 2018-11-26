@@ -7,4 +7,5 @@ tags: []
 ---
 ### Personal
 
-Van Phuc, born and grown in Nghe An (Vietnam), currently living in Ha Noi. 
+* Van Phuc, born and grown in Nghe An (Vietnam), currently living in Ha Noi. 
+* Website [x3pi.github.io](x3pi.github.io "x3pi.github.io"), email [x2pi3141@gmail.com](mailto://x2pi3141@gmail.com "x2pi3141@gmail.com")
