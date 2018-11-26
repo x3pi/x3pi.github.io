@@ -14,7 +14,7 @@ tags: []
 
 ### Career objective
 
-* I am currently looking for a web development with NodeJS or game development job.
+* I am currently looking for a web development job with NodeJS or a game development job.
 
 ### Highlights
 
