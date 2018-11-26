@@ -12,6 +12,21 @@ tags: []
 * My hobby is mathematics, computer science, natural. I like to be in a quiet place and think about the chaos.
 * My knowledge is mostly self-study.
 
+### Career objective
+
+I am currently looking for a web development or game development job.
+
 ### Highlights
 
-* Written **5 + articles** and tutorials
+* Written **4+** articles and tutorials.
+* Leaving university top Vietnam and leaving an internship at company top Vietnam. Of course, no damage. :D
+
+### Skills
+
+* Computer graphics, web full-stack, game development.
+* C/C++, HTML5, CSS, Javascript, Nodejs, OpenGL, WebGL, Unity3D...
+
+### Projects
+
+* Demo simulates physics at the server and rendered at the client  
+  Github: [https://github.com/x3pi/pisical.io](https://github.com/x3pi/pisical.io "https://github.com/x3pi/pisical.io")
