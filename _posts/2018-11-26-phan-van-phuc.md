@@ -19,6 +19,8 @@ tags: []
 ### Highlights
 
 * Written **4+** articles and tutorials.
+* Have a mathematical foundation
+* Eager to try new things and a quick learner
 * Leaving university top Vietnam and leaving an internship job at company top Vietnam. Of course, no damage. :D
 
 ### Skills
