@@ -14,7 +14,7 @@ tags: []
 
 ### Career objective
 
-* I am currently looking for a web development job with NodeJS or a game development job.
+* I am currently looking for a web development job with NodeJS or a game Development job.
 
 ### Highlights
 
@@ -30,7 +30,7 @@ tags: []
 
 ### Projects
 
-* Demo simulates physics at the server and rendered at the client  
+* Server-side physic simulations width NodeJs  
   Github: [https://github.com/x3pi/pisical.io](https://github.com/x3pi/pisical.io "https://github.com/x3pi/pisical.io")
 * Simple multiplayer shooter game, code in a few hours  
   Gihub: [https://github.com/x3pi/shot.io](https://github.com/x3pi/shot.io "https://github.com/x3pi/shot.io")
