@@ -31,7 +31,7 @@ tags: []
 
 ### Experience
 
-* Java Spring Web internship at FPT
+* Java Spring Web internship at FPT software
 
 ### Projects
 
