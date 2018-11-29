@@ -11,7 +11,7 @@ tags: []
 * Website [x3pi.github.io](x3pi.github.io "x3pi.github.io"), email [x2pi3141@gmail.com](mailto://x2pi3141@gmail.com "x2pi3141@gmail.com"), phone 0349607824.
 * Date of birth: 16/05/1993
 * My hobby is mathematics, computer science, natural. I like to be in a quiet place and think about the chaos.
-* University: Field automation - Hanoi University of Science and Technology (2015 - 2017)
+* University: Automation - Hanoi University of Science and Technology (2015 - 2017)
 * My knowledge is mostly self-study.
 
 ### Career objective
