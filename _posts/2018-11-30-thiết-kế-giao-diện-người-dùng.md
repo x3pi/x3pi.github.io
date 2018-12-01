@@ -1,9 +1,10 @@
 ---
-title: Thiết kế giao diện người dùng
+title: "[Note] Thiết kế giao diện người dùng"
 date: 2018-11-30 09:14:07 +0000
 layout: post
 tags:
-- Design
+- design
+- note
 
 ---
 * Khác biệt UI và GUI
