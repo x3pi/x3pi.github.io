@@ -21,7 +21,7 @@ tags: []
 
 ### Career objective
 
-* I am currently looking for a web development job with NodeJS or a game Development job.
+* I am currently looking for a Full-Stack Web Developer job  or a Game Development job.
 
 ### Highlights
 
