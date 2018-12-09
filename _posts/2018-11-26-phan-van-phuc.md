@@ -38,4 +38,6 @@ tags: []
 * Server-side physic simulations width NodeJs  
   Github: [https://github.com/x3pi/pisical.io](https://github.com/x3pi/pisical.io "https://github.com/x3pi/pisical.io")
 * Simple multiplayer shooter game, code in a few hours  
-  Gihub: [https://github.com/x3pi/shot.io](https://github.com/x3pi/shot.io "https://github.com/x3pi/shot.io")
+  Github: [https://github.com/x3pi/shot.io](https://github.com/x3pi/shot.io "https://github.com/x3pi/shot.io")
+* Simple Flappy Bird  
+  Github: [https://github.com/x3pi/Flappi](https://github.com/x3pi/Flappi "https://github.com/x3pi/Flappi")
