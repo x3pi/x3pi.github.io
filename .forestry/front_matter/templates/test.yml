@@ -40,3 +40,4 @@ fields:
   default: ''
 pages:
 - Database/mongo01.md
+- cv.md
