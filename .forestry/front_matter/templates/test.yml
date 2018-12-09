@@ -1,7 +1,7 @@
 ---
-label: Test
-hide_body: 
-is_partial: 
+label: Note
+hide_body: false
+is_partial: false
 fields:
 - name: layout
   label: Layout
