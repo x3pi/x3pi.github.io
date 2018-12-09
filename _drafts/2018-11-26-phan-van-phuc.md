@@ -32,7 +32,7 @@ tags: []
 ### Experience
 
 * Java Spring Web at FPT software
-* Server programming at VCCorp
+* Server programmer at VCCorp
 
 ### Projects
 
@@ -42,3 +42,4 @@ tags: []
   Github: [https://github.com/x3pi/shot.io](https://github.com/x3pi/shot.io "https://github.com/x3pi/shot.io")
 * Simple Flappy Bird  
   Github: [https://github.com/x3pi/Flappi](https://github.com/x3pi/Flappi "https://github.com/x3pi/Flappi")
+* Develop game server over 2000 players at a time
