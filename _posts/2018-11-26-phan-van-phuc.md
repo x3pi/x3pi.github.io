@@ -32,6 +32,7 @@ tags: []
 ### Experience
 
 * Java Spring Web at FPT software
+* Server programming at VCCorp
 
 ### Projects
 
