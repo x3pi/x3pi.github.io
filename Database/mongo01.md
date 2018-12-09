@@ -6,7 +6,6 @@ permalink: "/pages/database-mongo01-md"
 creationdate: ''
 author: Pi
 tags: []
-published: false
 
 ---
 ### CRUD and Nesting
