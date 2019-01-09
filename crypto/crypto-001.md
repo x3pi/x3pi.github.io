@@ -8,4 +8,4 @@ author: Pi
 tags: []
 
 ---
-1. Không bao giờ sử dụng mật mã độc quyền
+1. Never use a proprietary cipher  
