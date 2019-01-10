@@ -16,5 +16,5 @@ tags: []
    1. Use frequency of English letters
    2. Use frequency of pairs of letters (digrams)
 6. U: finite set (e.g. $$U = {0,1}^n$$)
-7. Probability distribution P over U is a function  $$P: U ⟶ \[0,1\]$$ <br>  
-   such that $$\\sum_{x\\epsilon U}P(x)=1$$
+7. Probability distribution P over U is a function  $$P: U ⟶ [0,1]$$ <br>  
+   such that $$\sum_{x\epsilon U}P(x)=1$$
