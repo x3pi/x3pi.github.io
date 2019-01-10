@@ -15,4 +15,4 @@ tags: []
 5. How to break a substitution cipher?
    1. Use frequency of English letters
    2. Use frequency of pairs of letters (digrams)
-6. 
+6. U: finite set (e.g. $$U = {0,1}^n$$)
