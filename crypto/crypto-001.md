@@ -21,3 +21,4 @@ tags: []
 8. The set A is called an event
 	$$A ⊆ U$$<br>
     $$Pr\left [ A \right ] = \sum_{x \in A} P(x) \in [0,1]$$
+9. A random variable $$X$$ is a function $$X:U⟶V$$
