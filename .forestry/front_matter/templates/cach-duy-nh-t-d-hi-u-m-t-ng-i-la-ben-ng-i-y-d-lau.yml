@@ -1,7 +1,6 @@
 ---
 label: Post
 hide_body: false
-is_partial: false
 fields:
 - name: layout
   label: Layout
@@ -24,11 +23,11 @@ fields:
   hidden: false
   default: ''
 pages:
-- _posts/2018-11-24-demo-mô-phỏng-vật-lý-tại-server-và-vẽ-tạiclient.md
+- _posts/2018-12-12-myproject.md
+- _posts/2018-11-30-thiết-kế-giao-diện-người-dùng.md
+- _posts/2018-11-26-phan-van-phuc.md
+- _posts/ghi-chú-về-shader-trong-unity.md
 - BonehShoup/encryption.md
 - _posts/list-notes.md
 - _posts/tìm-hiểu-position-based-fluids.md
-- _posts/2018-12-12-myproject.md
-- _posts/ghi-chú-về-shader-trong-unity.md
-- _posts/2018-11-30-thiết-kế-giao-diện-người-dùng.md
-- _posts/2018-11-26-phan-van-phuc.md
+- _posts/2018-11-24-demo-mô-phỏng-vật-lý-tại-server-và-vẽ-tạiclient.md
