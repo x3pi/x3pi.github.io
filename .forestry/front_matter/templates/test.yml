@@ -38,4 +38,5 @@ fields:
   hidden: false
   default: ''
 pages:
+- BonehShoup/chapter-3.md
 - cv.md
