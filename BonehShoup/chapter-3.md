@@ -8,7 +8,6 @@ author: Pi
 tags:
 - Note
 - Crypto
-published: false
 
 ---
 Chapter 03
