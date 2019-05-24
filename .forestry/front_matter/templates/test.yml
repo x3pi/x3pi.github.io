@@ -38,8 +38,4 @@ fields:
   hidden: false
   default: ''
 pages:
-- Computer Networks/congestion-avoidance-and-control.md
 - cv.md
-- crypto/crypto-001.md
-- pomelo/pomelo-01.md
-- Database/mongo01.md
