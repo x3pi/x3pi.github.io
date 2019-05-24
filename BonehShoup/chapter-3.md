@@ -12,8 +12,4 @@ tags:
 ---
 Chapter 03
 
-$$
-
-E(s, m) :=G(s) \\oplus m \\quad \\text { and } \\quad D(s, c) :=G(s) \\oplus c
-
-$$
+$$E(s, m) :=G(s) \\oplus m \\quad \\text { and } \\quad D(s, c) :=G(s) \\oplus c$$
