@@ -19,7 +19,7 @@ $E(s, m) :=G(s) \oplus m \quad \text { and } \quad D(s, c) :=G(s) \oplus c$
 
 $G(s)$ không thể thỏa mãn bí mật hoàn hỏa do khóa $s$ có số bit nhỏ hơn tin nhắn. Nhưng nó có thể an toàn về mặt ngữ nghĩa nếu sự khác biệt $G(s)$ và một chuỗi ngẫy nhiên $r$ là không đáng kể.  
 $1 \%$ được xem là đáng kể  
-$2^-100$ được xem là không đáng kể
+$2^{-100}$ được xem là không đáng kể
 
 ### ***
 
