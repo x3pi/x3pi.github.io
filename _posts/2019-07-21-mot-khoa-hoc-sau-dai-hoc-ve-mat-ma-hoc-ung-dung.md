@@ -10,6 +10,5 @@ creationdate: 2019-07-21 00:00:00 +07:00
 ## Giới thiệu
 
 Đây là tổng hợp các bài ghi chú của tôi khi đọc cuốn sách:
-A Graduate Course in Applied Cryptography bởi Dan Boneh và Victor Shoup
-
-[https://toc.cryptobook.us/](https://toc.cryptobook.us/)
+A Graduate Course in Applied Cryptography bởi Dan Boneh và Victor Shoup. Cuốn sách miễn phí tại đây:
+<a href="https://toc.cryptobook.us/" target="_blank">https://toc.cryptobook.us/</a>
