@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>reveal.js – The HTML Presentation Framework</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/reveal.css">
+    <link rel="stylesheet" href="../css/theme/white.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../lib/css/monokai.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? '../css/print/pdf.css' : '../css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h1>The One Time Pad</h1>
+            </section>
+
+            <section>
+                <h2>Mật mã đối xứng định nghĩa</h2>
+                <p>
+                    <b>Định nghĩa :</b> một mật mã xác định trên $(\mathcal{K}, \mathcal{M}, \mathcal{C})$
+                </p>
+                <p>
+                    là một cặp thuật toán hiệu quả $\mathcal{E}=(E, D)$ với
+                </p>
+                <p>
+                    $E : \mathcal{K} \times \mathcal{M} \rightarrow \mathcal{C}$, $D : \mathcal{K} \times \mathcal{C}
+                    \rightarrow \mathcal{M}$
+                </p>
+                <p>
+                    sao cho: $\forall m \in \mathcal{M}, k \in \mathcal{K}: D(k, E(k, m))=m$
+                </p>
+            </section>
+
+            <!-- Example of nested vertical slides -->
+            <section>
+                <h2>The One Time Pad </h2><span>(Vernam 1917)</span>
+                <p>Ví dụ đầu tiên của một "an toàn" mật mã</p>
+                $\mathcal{M}=\mathcal{C}=\{0,1\}^{n}, \quad 2=\{0,1\}^{n}$
+                <p>key = (chuỗi bit ngẫu nhiên dài bằng tin nhắn)</p>
+            </section>
+
+            <section>
+                <h2>The One Time Pad </h2><span>(Vernam 1917)</span>
+                <p>
+                    $C : E(k, m)=K \oplus m, D(K, c)=k \oplus C$
+                </p>
+                Thực vậy:<br />
+                $D(k, E(k, m))=D(k, k \oplus m)=k \oplus(k \oplus m)$
+                <br />
+                $=(k \oplus k) \oplus m=0^{L} \oplus m=m$<br/>
+                <img src="./images/001.png" style=" width: 40%">
+            </section>
+
+            <section>
+                <h2>The One Time Pad</h2>
+                Bạn có thể tính toán chìa khóa từ $m$ và $c$ <br />
+                $k=m \oplus c$<br />
+                Rất nhanh, mã hóa/giải mã !!<br />
+                ... nhưng chìa khóa dài (dài bằng bản rõ)
+            </section>
+
+            <section>
+                <h2>Mật mã an toàn là gì?</h2>
+                Khả năng kẻ tấn công: chỉ tấn công CT (for now)<br />
+                Ý tưởng của Shannon:<br />
+                CT nên tiết lộ không "thông tin" về PT
+            </section>
+            <section>
+                <h2>Lý thuyết thông tin bảo mật</h2>
+                (Shannon 1949)<br />
+                Định nghĩa: Một mật mã $(E,D)$ trên $(\mathcal{K}, \mathcal{M}, \mathcal{C})$ có hoàn hảo bí mật nếu
+                $$
+                \forall m_{0}, m_{1} \in M \quad\left(\left|m_{0}\right|=\left|m_{1}\right|\right) \text { và } \forall
+                c \in C
+                $$
+                $$
+                \operatorname{Pr}\left[E\left(k, m_{o}\right)=c\right]=\operatorname{Pr}\left[E\left(k,
+                m_{j}\right)=c\right] \quad \text { với } k \stackrel{R}{\leftarrow} K
+                $$
+            </section>
+            <section>
+                Bổ đề: OTP có bí mật hoàn hảo:<br />
+                Chứng minh:<br />
+                Mật mã có bí mật hoàn hảo khi
+                $
+                \forall m, c : \operatorname{Pr}_{k}[E(k, m)=c] 
+                $<br/>
+                $= \frac{\#\{k \in \mathcal{K} : E(E, m)=c\}}{|\mathcal{K}|}$<br/>
+                $
+                = const
+                $<br/>
+                Với OTP đó là: $\frac{1}{|\mathcal{K}|}$ là hằng số vậy nên OTP có bí mật hoàn hảo
+            </section>
+
+            <section id="transitions">
+                <h2>Tin xấu là...</h2>
+                <p>
+                   Định lý: bí mật hoàn hảo $\Rightarrow |\mathcal{K}| \geq|\mathcal{M}|$<br/>
+                   Độ dài chìa khóa lớn hơn hoặc bằng độ dài bản rõ nên khó sử dụng trong thực tế.
+                </p>
+            </section>
+
+            <section id="themes">
+                <h2>End</h2>
+            </section>
+        </div>
+
+    </div>
+
+    <script src="../js/reveal.js"></script>
+
+    <script>
+
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                { src: '../plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: '../plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: '../plugin/highlight/highlight.js', async: true },
+                { src: '../plugin/search/search.js', async: true },
+                { src: '../plugin/zoom-js/zoom.js', async: true },
+                { src: '../plugin/notes/notes.js', async: true },
+                { src: '../plugin/math/math.js', async: true }
+
+            ]
+        });
+
+    </script>
+
+</body>
+
+</html>
