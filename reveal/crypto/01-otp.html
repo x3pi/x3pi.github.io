@@ -20,7 +20,11 @@
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="../lib/css/monokai.css">
-
+    <style>
+        .reveal .slides {
+            text-align: left;
+        }
+    </style>
     <!-- Printing and PDF exports -->
     <script>
         var link = document.createElement('link');
@@ -78,8 +82,9 @@
                 Thực vậy:<br />
                 $D(k, E(k, m))=D(k, k \oplus m)=k \oplus(k \oplus m)$
                 <br />
-                $=(k \oplus k) \oplus m=0^{L} \oplus m=m$<br/>
-                <img src="https://raw.githubusercontent.com/x3pi/storage/master/images/crypto/001.PNG" style=" width: 40%">
+                $=(k \oplus k) \oplus m=0^{L} \oplus m=m$<br />
+                <img src="https://raw.githubusercontent.com/x3pi/storage/master/images/crypto/001.PNG"
+                    style=" width: 40%">
             </section>
 
             <section>
@@ -114,20 +119,20 @@
                 Chứng minh:<br />
                 Mật mã có bí mật hoàn hảo khi
                 $
-                \forall m, c : \operatorname{Pr}_{k}[E(k, m)=c] 
-                $<br/>
-                $= \frac{\#\{k \in \mathcal{K} : E(E, m)=c\}}{|\mathcal{K}|}$<br/>
+                \forall m, c : \operatorname{Pr}_{k}[E(k, m)=c]
+                $<br />
+                $= \frac{\#\{k \in \mathcal{K} : E(E, m)=c\}}{|\mathcal{K}|}$<br />
                 $
                 = const
-                $<br/>
+                $<br />
                 Với OTP đó là: $\frac{1}{|\mathcal{K}|}$ là hằng số vậy nên OTP có bí mật hoàn hảo
             </section>
 
             <section id="transitions">
                 <h2>Tin xấu là...</h2>
                 <p>
-                   Định lý: bí mật hoàn hảo $\Rightarrow |\mathcal{K}| \geq|\mathcal{M}|$<br/>
-                   Độ dài chìa khóa lớn hơn hoặc bằng độ dài bản rõ nên khó sử dụng trong thực tế.
+                    Định lý: bí mật hoàn hảo $\Rightarrow |\mathcal{K}| \geq|\mathcal{M}|$<br />
+                    Độ dài chìa khóa lớn hơn hoặc bằng độ dài bản rõ nên khó sử dụng trong thực tế.
                 </p>
             </section>
 

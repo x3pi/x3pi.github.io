@@ -25,7 +25,6 @@
             text-align: left;
         }
     </style>
-
     <!-- Printing and PDF exports -->
     <script>
         var link = document.createElement('link');
@@ -47,57 +46,48 @@
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
             <section>
-                <h1>Trình tạo giả ngẫu nhiên</h1>
-                (Pseudorandom Generators)<br />
-                (PRG)
+                <h1>Cuộc tấn công vào OTP và mật mã dòng</h1>
             </section>
 
             <section>
-                <h2>Mật mã dòng: Làm OTP thực tế</h2>
-                <p>Ý tưởng thay thế "ngẫu nhiên" chìa khóa bởi "giả ngẫu nhiên" chìa khóa</p>
-                PRG là một function: $G :\{0,1\}^{s} \rightarrow\{0,1\}^{n}$<br />
-                $\{0,1\}^{s}$ là hạt giống<br />
+                <h2>Tấn công 1: hai lần là không an toàn !!</h2>
+                <u>Quy tắc:</u>Không bao giờ sử dụng khóa (key) mật mã dòng nhiều lần !!<br />
+                $\mathrm{C}_{1} \leftarrow \mathrm{m}_{1} \oplus \mathrm{PRG}(\mathrm{k})$<br />
+                $\mathrm{C}_{2} \leftarrow \mathrm{m}_{2} \oplus \mathrm{PRG}(\mathrm{k})$<br />
+                Chỉ nghe lén:<br />
+                $\mathrm{C}_{1} \oplus \mathrm{C}_{2} \rightarrow \mathrm{m}_{1} \oplus \mathrm{m}_{2}$<br />
+                Đủ để phân tích tiếng Anh và ASCII rằng:<br />
+                $\mathrm{m}_{1} \oplus \mathrm{m}_{2} \quad \rightarrow \quad \mathrm{m}_{1}, \mathrm{m}_{2}$
             </section>
-
-            <!-- Example of nested vertical slides -->
             <section>
-                <h2>Mật mã dòng: Làm OTP thực tế</h2>
-                $c :=E(k, m)=m \oplus G(k)$<br />
-                $D(k, c) = c \oplus G(k)$<br />
-                <img src="https://raw.githubusercontent.com/x3pi/storage/master/images/crypto/002.PNG"
-                    style=" width: 40%">
+                <h2>Ví dụ thế giới thực</h2>
+                <ul>
+                    <li>Project Venona</li>
+                    <li>MS-PPTP (windows NT):</li>
+                    Sử dụng khóa giống nhau cho cả $client \rightarrow server$ và $server \rightarrow client$.<br />
+                    <u>Quy tắc:</u> Không bao giờ sử dụng chung khóa cho $client \rightarrow server$ và $server
+                    \rightarrow client$.
+                </ul>
             </section>
-
             <section>
-                Mật mã dòng có bí mật hoàn hảo không?<br />
-                Không, chiều dài key ngắn hơn chiều dài tin nhắn.<br /><br />
-                <p class="fragment">
-                    Cần một định nghĩa khác về bảo mật<br />
-                    Bảo mật phụ thuộc vào PRG
-                    <p />
+                <h2>Ví dụ thế giới thực</h2>
+                <b>802.11b WEP:</b><br />
+                <img src="https://raw.githubusercontent.com/x3pi/storage/master/images/crypto/003.PNG"
+                    style=" width: 80%"><br />
+                Chiều dài IV: 24 bits<br />
+                Lặp lại sau: $2^{24} \approx 16 \mathrm{M}$ frames<br />
+                Trên một số card wifi: IV resets về 0 sau khi hết chu kỳ
+                <u>Quy tắc:</u> Tránh các chìa khóa liên quan.
             </section>
-
             <section>
-                <h2>PRG phải không thể đoán trước</h2>
-                Chúng ta nói: $\mathrm{G} : \mathrm{K} \rightarrow\{0,1\}$ là đoán được nếu <br />
-                $\exists$ thuật toán "hiệu quả" $A$ và $\exists 0 \leq i \leq n-1$ sao cho<br />
-                $Pr _{k \leftarrow K} [\left.A(G(k))\right|_{1, \ldots i} = \left.G(k)\right|_{i+1}
-                ]>\frac{1}{2}+\varepsilon$<br />
-                với $\varepsilon$ là đáng kể (ví dụ: $\varepsilon=1 / 2^{30}$)<br />
-                Định nghĩa: PRG là không đoán được thì với mọi $i$ không tồn tại thuật toán "hiệu quả" A với
-                $\varepsilon$ là đáng kể
-
+                <h2>Một xây dựng tốt hơn</h2>
+                Bắt đầu khởi tạo một khóa k giả ngẫu nhiên rồi mới thực hiện mở rộng khóa cho các frame tiếp theo.
             </section>
-
             <section>
-                <h2>PRGs yếu</h2>
-                <p>
-                    glibc random():<br />
-                    $r[i] \leftarrow(r[i-3]+r[i-31]) \% 2^{32}$<br />
-                    output $r[i]>>1$
-                </p>
-                Không bao giờ sử dụng trong mật mã
-
+                <h2>Tấn công 2: không có tính toàn vẹn</h2>
+                Sửa đổi mã mà không bị phát hiện và đã dự đoán được tác động vào bản rõ<br />
+                <img src="https://raw.githubusercontent.com/x3pi/storage/master/images/crypto/004.PNG"
+                    style=" width: 80%"><br />
             </section>
             <section>
                 <h2>End</h2>

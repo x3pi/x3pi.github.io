@@ -25,7 +25,6 @@
             text-align: left;
         }
     </style>
-
     <!-- Printing and PDF exports -->
     <script>
         var link = document.createElement('link');
@@ -47,56 +46,18 @@
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
             <section>
-                <h1>Trình tạo giả ngẫu nhiên</h1>
-                (Pseudorandom Generators)<br />
-                (PRG)
+                <h1>Không đáng kể và đáng kể</h1>
             </section>
 
             <section>
-                <h2>Mật mã dòng: Làm OTP thực tế</h2>
-                <p>Ý tưởng thay thế "ngẫu nhiên" chìa khóa bởi "giả ngẫu nhiên" chìa khóa</p>
-                PRG là một function: $G :\{0,1\}^{s} \rightarrow\{0,1\}^{n}$<br />
-                $\{0,1\}^{s}$ là hạt giống<br />
-            </section>
-
-            <!-- Example of nested vertical slides -->
-            <section>
-                <h2>Mật mã dòng: Làm OTP thực tế</h2>
-                $c :=E(k, m)=m \oplus G(k)$<br />
-                $D(k, c) = c \oplus G(k)$<br />
-                <img src="https://raw.githubusercontent.com/x3pi/storage/master/images/crypto/002.PNG"
-                    style=" width: 40%">
-            </section>
-
-            <section>
-                Mật mã dòng có bí mật hoàn hảo không?<br />
-                Không, chiều dài key ngắn hơn chiều dài tin nhắn.<br /><br />
-                <p class="fragment">
-                    Cần một định nghĩa khác về bảo mật<br />
-                    Bảo mật phụ thuộc vào PRG
-                    <p />
-            </section>
-
-            <section>
-                <h2>PRG phải không thể đoán trước</h2>
-                Chúng ta nói: $\mathrm{G} : \mathrm{K} \rightarrow\{0,1\}$ là đoán được nếu <br />
-                $\exists$ thuật toán "hiệu quả" $A$ và $\exists 0 \leq i \leq n-1$ sao cho<br />
-                $Pr _{k \leftarrow K} [\left.A(G(k))\right|_{1, \ldots i} = \left.G(k)\right|_{i+1}
-                ]>\frac{1}{2}+\varepsilon$<br />
-                với $\varepsilon$ là đáng kể (ví dụ: $\varepsilon=1 / 2^{30}$)<br />
-                Định nghĩa: PRG là không đoán được thì với mọi $i$ không tồn tại thuật toán "hiệu quả" A với
-                $\varepsilon$ là đáng kể
-
-            </section>
-
-            <section>
-                <h2>PRGs yếu</h2>
-                <p>
-                    glibc random():<br />
-                    $r[i] \leftarrow(r[i-3]+r[i-31]) \% 2^{32}$<br />
-                    output $r[i]>>1$
-                </p>
-                Không bao giờ sử dụng trong mật mã
+                <h2>Không đáng kể và đáng kể</h2>
+                <u>Trong thực tế:</u> $\varepsilon$ là giá trị vô hướng<br />
+                $\varepsilon$ đáng kể: $\varepsilon \geq 1 / 2^{30}$ (khả năng xảy ra hơn 1G dữ liệu)<br />
+                $\varepsilon$ không đáng kể: $\varepsilon \leq 1 / 2^{80}$ (không xảy ra trong vòng đời của key)<br />
+                <br/>
+                <u>Trong lý thuyết:</u>  $\varepsilon$ là một function $\varepsilon : Z^{\geq 0} \rightarrow R^{\geq 0}$ và<br/>
+                $\varepsilon$ đáng kể: $\exists \mathrm{d} : \varepsilon(\lambda) \geq 1 / \lambda^{\mathrm{d}}$<br/>
+                $\varepsilon$ không đáng kể: $\forall d, \lambda \geq \lambda_{d} : \quad \varepsilon(\lambda) \leq 1 / \lambda^{d}$
 
             </section>
             <section>
