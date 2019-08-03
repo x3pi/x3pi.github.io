@@ -16,7 +16,10 @@ Phiên bản trên coursera: [https://www.coursera.org/learn/crypto ](https://ww
 Cuốn sách miễn phí tại đây: [https://toc.cryptobook.us/](https://toc.cryptobook.us/)\\
 Và có một khóa học của MIT:  [https://courses.csail.mit.edu/6.857/2019/](https://courses.csail.mit.edu/6.857/2019/)
 
+## Mật mã dòng
+
 1. [THE ONE TIME PAD](https://x3pi.github.io/reveal/crypto/01-otp.html)
+
 
 <h3>SẼ CẬP NHẬT THÊM<h3/>
 
