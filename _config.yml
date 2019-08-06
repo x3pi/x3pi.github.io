@@ -21,3 +21,6 @@ kramdown:
   input: GFM
   auto_ids: true
   syntax_highlighter: rouge
+
+repository: x3pi/x3pi.github.io
+

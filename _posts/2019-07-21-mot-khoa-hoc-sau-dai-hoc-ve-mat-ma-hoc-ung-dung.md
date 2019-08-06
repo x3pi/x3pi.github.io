@@ -17,7 +17,7 @@ Chủ để này khá khoai mấy lớp ở MIT và Stanford thường dạy cho
 1. [The one time pad](https://x3pi.github.io/reveal/crypto/01-otp.html)
 2. [Trình tạo giả ngẫu nhiên](https://x3pi.github.io/reveal/crypto/02-prg.html)
 3. [Không đáng kể và đáng kể](https://x3pi.github.io/reveal/crypto/03-n&nn.html)
-3. [Tấn công vào OTP và mật mã dòng](https://x3pi.github.io/reveal/crypto/03-n&nn.html)
+4. [Tấn công vào OTP và mật mã dòng](https://x3pi.github.io/reveal/crypto/04-attacks-otp.html)
 
 
 
@@ -28,5 +28,5 @@ Khóa học của Stanford: [https://crypto.stanford.edu/~dabo/cs255/](https://c
 Khóa học tiền mã hóa và ký thuật blockchains Stanford: [https://cs251crypto.stanford.edu/18au-cs251/](https://cs251crypto.stanford.edu/18au-cs251/)\\
 Phiên bản trên coursera: [https://www.coursera.org/learn/crypto ](https://www.coursera.org/learn/crypto)\\
 Cuốn sách miễn phí tại đây: [https://toc.cryptobook.us/](https://toc.cryptobook.us/)\\
-Và có một khóa học của MIT:  [https://courses.csail.mit.edu/6.857/2019/](https://courses.csail.mit.edu/6.857/2019/)+
+Và có một khóa học của MIT:  [https://courses.csail.mit.edu/6.857/2019/](https://courses.csail.mit.edu/6.857/2019/)
 
