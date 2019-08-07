@@ -312,16 +312,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.js"></script>
 
     <script>
-        Howler.autoUnlock = false;
+        window.sound = null
         function PlayH() {
-            var sound = new Howl({
-                src: ['https://109a15170.vws.vegacdn.vn/WwdHZKj_SWtkatJw2hb6cA/1565205782/media1/song/web1/34/286278/286278.mp3'],
-                format: ['mp3'],
-                autoplay: true,
-                loop: true,
-            });
-
-            sound.play();
+            if (window.sound) { } else {
+                window.sound = new Howl({
+                    src: ['https://109a15170.vws.vegacdn.vn/WwdHZKj_SWtkatJw2hb6cA/1565205782/media1/song/web1/34/286278/286278.mp3'],
+                    format: ['mp3'],
+                    autoplay: true,
+                    loop: true,
+                    onplayerror: function () {
+                        sound.once('unlock', function () {
+                            window.sound.play()
+                        });
+                    }
+                });
+                window.sound.play()
+            }
         }    
     </script>
 </body>
