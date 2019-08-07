@@ -1,3 +1,15 @@
+
+---
+title: Happy Birthday Love
+date: 2019-08-07 21:47:23 +0000
+layout: ''
+permalink: "/happy-birthday.love"
+creationdate: ''
+author: ''
+tags: []
+
+---
+
 <html>
 
 <head>
@@ -75,7 +87,7 @@
         <h1 class="birthday-container__text">
   Mừng ngày sinh nhật đáng yêu<br/>
   Mừng ngày sinh nhật dễ thương<br/>
-  ...<br/>
+  08 ❤ 08<br/>
   Chúc mừng sinh nhật nhé!</h1>
         <br>
     </div>
