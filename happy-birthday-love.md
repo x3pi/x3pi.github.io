@@ -3,14 +3,12 @@
 title: Happy Birthday Love
 date: 2019-08-07 21:47:23 +0000
 layout: ''
-permalink: "/happy-birthday.love"
+permalink: "/happy-birthday-love"
 creationdate: ''
 author: ''
 tags: []
 
 ---
-
-<html>
 
 <head>
     <meta charset="utf-8">
@@ -77,7 +75,6 @@ tags: []
             }
         }
     </style>
-    <title>Happy</title>
 </head>
 
 <body onload="myF()">
@@ -315,5 +312,3 @@ tags: []
     </script>
 
 </body>
-
-</html>
