@@ -14,7 +14,7 @@
 <body>
     <section id="static">
         <pre>
-            {{ content }}
+            <code id="static-js">{{ content | remove: '<p>' | remove: '</p>' }}</code>
         </pre>
     </section>
     <section id="live" class="live hidden">
