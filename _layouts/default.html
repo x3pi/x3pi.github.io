@@ -18,7 +18,38 @@
     <!-- mathjax -->
     <script type="text/x-mathjax-config">
 		MathJax.Hub.Config({
-			tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']]
+      },
+      styles: {
+        ".mjx-chtml": {
+          color: "#009933",
+          "font-size": "100% !important",
+        }
+      }
+      /*
+      styles: {
+        ".mjx-chtml *": {
+            color: "#F00",
+            "font-size": "100% !important",
+          },
+
+        ".mjx-chtml": {
+          color: "#00B8F1",
+          "font-size": "100% !important",
+          "margin-top": "1% !important",
+          "margin-bottom": "1% !important"
+        },
+        ".mjx-mrow": {
+          },
+        ".mjx-numerator": {
+          "font-size": "100% !important"
+          },
+          ".mjx-denominator":{
+            "font-size": "100% !important"
+          }
+        }
+        */
 		});
 	</script>
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML-full"></script>
