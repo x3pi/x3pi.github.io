@@ -1,5 +1,5 @@
 ---
-title: Test
+title: Live The One Time Pad 
 date: 2019-08-10 12:06:23 +0000
 layout: livejs
 permalink: "/live/crypto/otp.html"
