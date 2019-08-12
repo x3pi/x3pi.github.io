@@ -2,7 +2,7 @@
 title: Test
 date: 2019-08-10 12:06:23 +0000
 layout: livejs
-permalink: "/live/js/test.md"
+permalink: "/live/crypto/otp.html"
 creationdate: ''
 author: ''
 tags: []

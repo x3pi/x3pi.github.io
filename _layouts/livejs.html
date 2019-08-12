@@ -14,12 +14,12 @@
 <body>
     <section id="static">
         <pre>
-            <code id="static-js">{{ content | remove: '<p>' | remove: '</p>' }}</code>
+            <code id="static-js">{{ content | remove: '' | remove: '' }}</code>
         </pre>
     </section>
     <section id="live" class="live hidden">
         <header>
-            <h4>JavaScript Demo: Array.find()</h4>
+            <h4>{{ page.title | default: site.title }}</h4>
         </header>
         <div id="editor" class="editor"></div>
 
