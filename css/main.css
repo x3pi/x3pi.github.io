@@ -126,7 +126,7 @@ a:visited {
 /* hr style */
 
 hr{
-    margin: auto;
+    margin: auto !important;
     width: 100px;
     position: relative;
     border-top: 2px solid #0071bc;
@@ -135,7 +135,7 @@ hr{
     height: 0;
     overflow: visible;
 }
-/*
+
 hr:before {
     position: absolute;
     content: "";
@@ -144,12 +144,12 @@ hr:before {
     width: 10px;
     top: -12px;
     border: 6px solid #D6D8FF;
-    border-radius: 10%;
+    border-radius: 50%;
     background: #0071bc;
-    left: -5px;
-    animation: pulse 2s infinite;
+    left: 35px;
+    /* animation: pulse 2s infinite; */
 }
-*/
+
 
 /* pules effect */
 /*
