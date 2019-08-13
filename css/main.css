@@ -1,5 +1,7 @@
 /* Base */
 
+
+
 /* ----------------------------------------------------------*/
 
 * {
@@ -512,6 +514,7 @@ hr:before {
     padding-left: 20px;
 }
 
+/*
 .post pre, .post code {
     border: 1px solid #d5d5e9;
     background-color: #eef;
@@ -523,22 +526,25 @@ hr:before {
     overflow: scroll;
 }
 
+*/
+
 .post code {
-    padding: 1px 5px;
+    font-size: 14px;
 }
 
 .post ul, .post ol {
     margin-left: 1.35em;
 }
-
+/*
 .post pre code {
     border: 0;
     padding-right: 0;
     padding-left: 0;
 }
+*/
 
 /* terminal */
-
+/*
 .post pre.terminal {
     border: 1px solid #000;
     background-color: #333;
@@ -551,8 +557,14 @@ hr:before {
 .post pre.terminal code {
     background-color: #333;
 }
-
+*/
 /* Syntax highlighting styles */
+
+.hljs{
+    /* border-left: 1px solid #009933!important; */
+    border: 1px solid #3f87a6;
+    border-left: 5px solid #3f87a6
+}
 
 /* ----------------------------------------------------------*/
 
