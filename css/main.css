@@ -1029,3 +1029,9 @@ hr:before {
     height: 16px;
     margin-right: .2em;
 }
+
+@media print {
+    .fb-comments, .site-footer, .interactive{
+        display: none !important;
+    }
+}
