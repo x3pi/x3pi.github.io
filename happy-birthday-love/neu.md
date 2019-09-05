@@ -2,7 +2,7 @@
 title: Nếu chúng mình
 date: 2019-09-05 21:45:00 +0000
 layout: ''
-permalink: "/cv"
+permalink: "/neu"
 creationdate: ''
 author: ''
 tags: []
