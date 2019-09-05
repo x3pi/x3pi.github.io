@@ -45,7 +45,8 @@ var Messenger = function(el){
       'Thì còn nhiều việc phải làm.','Nếu không bắt đầu từ những việc nhỏ bây giờ.','Thì không bao giờ làm được gì.',
       'Nếu phải lo lắng anh là người lo lắng nhiều hơn em.',
       'Nhưng anh biết rằng mình sẽ vượt qua thôi.',
-   'Nếu không yêu bây giờ thì bao giờ mới được yêu!'
+   'Nếu không yêu bây giờ thì bao giờ mới được yêu!',
+   '❤❤❤'
     ];
     
     setTimeout(m.animateIn, 1000);
