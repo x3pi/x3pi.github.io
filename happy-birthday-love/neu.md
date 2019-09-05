@@ -26,8 +26,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: monospace;
-  font-size: 30px;
-  white-space: nowrap;
+  font-size: 50px;
   text-shadow: 0 2px 2px rgba(#000, 0.9);
 }
 </style>
