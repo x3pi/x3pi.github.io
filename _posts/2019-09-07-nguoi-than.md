@@ -22,6 +22,6 @@ Thực ra những người thân yêu của mình khác mình nhiều thứ hơn
 
 Việc họ có thể làm những điều không như mình nghĩ, mình mong muốn, mong đợi là điều luôn luôn có thể xảy ra. Điều đó làm mình tổn thương phản ứng đáp lại của mình có thể căm hận họ.
 
-Nhưng hiểu được sự khác biệt. Mỗi khi gặp điều luôn luôn có thể xảy ra như thế. Mình cố nghĩ về những điều tốt đẹp đã có về họ. Nghĩ đến họ đã trải qua nhiều thứ khác mình. Bình tĩnh giải quyết theo một hướng khác. Có thể không có cách giải quyết tốt nhất cho tất cả mọi người nhưng còn hơn là căm hận rồi hận nhau làm cho chất lượng cuộc sống của chính bản thân mình giảm đi.
+Nhưng hiểu được sự khác biệt. Mỗi khi gặp điều luôn luôn có thể xảy ra như thế. Mình cố nghĩ về những điều tốt đẹp đã có về họ. Nghĩ đến họ đã trải qua nhiều thứ khác mình. Bình tĩnh giải quyết theo một hướng khác. Có thể không có cách giải quyết tốt nhất cho tất cả mọi người nhưng còn hơn là hận nhau làm cho chất lượng cuộc sống của chính bản thân mình và người khác giảm đi.
 
 Từ đó trái tim không dễ bị tổn thương nữa! Thay vào đó là yêu thương!
