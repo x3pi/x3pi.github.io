@@ -1,5 +1,5 @@
 ---
-title: Những người thân yêu của mình khác mình nhiều thứ hơn là giống mình
+title: Những người thân yêu của mình khác mình nhiều hơn là giống mình
 date: 2019-09-07 02:50:01 +07:00
 tags:
 - life
