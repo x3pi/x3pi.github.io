@@ -8,13 +8,15 @@ author: ''
 tags: []
 
 ---
+
+<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><div class="full-content-w"> <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script><div class="full-content-w"> <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js"></script><div class="full-content-w"> <div class="header-w"> <svg version="1.1" id="svg-xp" class="" width="260" height="260" viewBox="0 0 660 660"> </svg> <h1 class="poem-title">Anh rảnh mà</h1> </div> <div class="poem-wrap"> <p class="first stanza">
 Với em anh luôn rảnh mà.
 Tập gym để cõng em nà.
 Chỉ là chờ em nói gì.
 Sẵn sàng đến mang em đi.
 </p> </div> </div> <footer> VanPhuc </footer> <div class="rc--circles-wrap"></div> <style id="jsbin-css"> body {
-    font-family: "Droid Serif";
+    font-family: "Special Elite";
 }
 
 h1 {
