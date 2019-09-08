@@ -107,7 +107,7 @@ circle {
 }
 
 footer {
-      font-size: 40px;
+      font-size: 20px;
     margin: 0 auto;
     margin-top: 45px;
     border-top: 1px solid #ddd;
