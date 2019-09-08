@@ -16,7 +16,7 @@ Với em anh luôn rảnh mà
 Sẽ luôn che chở em nà
 Chỉ là chờ em nói gì
 Sẵn sàng đến mang em đi.
-</p> </div> </div> <footer> <span>❤</span> Thời gian còn nhiều, chắc tháng gì đó 😀. Sẵn sàng chờ em nói lên suy nghĩ của mình. Cũng chuẩn bị tâm lý cho mọi tình huống rồi. Đừng đăng linh tinh lên tường rồi lại xóa như thế! Lớn rồi đới! <span>❤</span></footer> <div class="rc--circles-wrap"></div> <style id="jsbin-css"> body {
+</p> </div> </div> <footer> <span>❤</span> Thời gian còn nhiều, chắc tháng gì đó 😀. Sẵn sàng chờ em nói lên suy nghĩ của mình. Cũng chuẩn bị tâm lý cho mọi tình huống rồi. Đừng đăng linh tinh lên tường như thế muốn gửi cho ai thì gửi trực tiếp đi. <span> Lớn rồi đới! ❤</span></footer> <div class="rc--circles-wrap"></div> <style id="jsbin-css"> body {
     font-family: "Special Elite";
 }
 
@@ -107,7 +107,7 @@ circle {
 }
 
 footer {
-      font-size: 20px;
+      font-size: 16px;
     margin: 0 auto;
     margin-top: 45px;
     border-top: 1px solid #ddd;
