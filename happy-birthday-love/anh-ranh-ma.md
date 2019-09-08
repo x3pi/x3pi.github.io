@@ -108,11 +108,14 @@ circle {
 
 footer {
       font-size: 40px;
-    color: red;
     margin: 0 auto;
     margin-top: 45px;
     border-top: 1px solid #ddd;
     padding: 25px;
+}
+footer span{
+    color: red;
+
 }
 
 footer a {
