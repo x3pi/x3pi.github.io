@@ -16,7 +16,7 @@ Với em anh luôn rảnh mà
 Sẽ luôn che chở em nà
 Chỉ là chờ em nói gì
 Sẵn sàng đến mang em đi.
-</p> </div> </div> <footer> <span>❤</span> Thời gian còn nhiều, chắc tháng gì đó 😀. Sẵn sàng chờ em nói lên suy nghĩ của mình. Cũng chuẩn bị tâm lý cho mọi tình huống rồi. Đừng đăng linh tinh lên tường như thế muốn gửi cho ai thì gửi trực tiếp đi. <span> Lớn rồi đới! ❤</span></footer> <div class="rc--circles-wrap"></div> <style id="jsbin-css"> body {
+</p> </div> </div> <footer> <span>❤</span> Thời gian còn nhiều, chắc tháng gì đó 😀. Sẵn sàng chờ em nói lên suy nghĩ của mình. Cũng chuẩn bị tâm lý cho mọi tình huống rồi. Hạn chế đăng tâm trạng lên tường đi muốn gửi cho ai thì gửi trực tiếp đi. <span style="color: green">Lớn rồi đới!</span><span> ❤</span></footer> <div class="rc--circles-wrap"></div> <style id="jsbin-css"> body {
     font-family: "Special Elite";
 }
 
