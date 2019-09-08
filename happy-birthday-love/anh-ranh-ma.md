@@ -16,7 +16,7 @@ Với em anh luôn rảnh mà
 Tập gym để cõng em nà
 Chỉ là chờ em nói gì
 Sẵn sàng đến mang em đi.
-</p> </div> </div> <footer> VanPhuc </footer> <div class="rc--circles-wrap"></div> <style id="jsbin-css"> body {
+</p> </div> </div> <footer> ❤ </footer> <div class="rc--circles-wrap"></div> <style id="jsbin-css"> body {
     font-family: "Special Elite";
 }
 
