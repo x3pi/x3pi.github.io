@@ -25,6 +25,8 @@ Chủ để này khá khoai mấy lớp ở MIT và Stanford thường dạy cho
 
 ## Block Ciphers
 
+1. [Mật mã khối là gì?](/crypto/009.html)
+
 ## SẼ NOTE TIẾP
 
 **Tham khảo:**\\
