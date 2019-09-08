@@ -9,11 +9,12 @@ tags: []
 
 ---
 
+
 <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><div class="full-content-w"> <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script><div class="full-content-w"> <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js"></script><div class="full-content-w"> <div class="header-w"> <svg version="1.1" id="svg-xp" class="" width="260" height="260" viewBox="0 0 660 660"> </svg> <h1 class="poem-title">Anh rảnh mà</h1> </div> <div class="poem-wrap"> <p class="first stanza">
-Với em anh luôn rảnh mà.
-Tập gym để cõng em nà.
-Chỉ là chờ em nói gì.
+Với em anh luôn rảnh mà
+Tập gym để cõng em nà
+Chỉ là chờ em nói gì
 Sẵn sàng đến mang em đi.
 </p> </div> </div> <footer> VanPhuc </footer> <div class="rc--circles-wrap"></div> <style id="jsbin-css"> body {
     font-family: "Special Elite";
@@ -21,15 +22,11 @@ Sẵn sàng đến mang em đi.
 
 h1 {
     font-family: "Special Elite";
-    font-size: 48px;
+    font-size: 60px;
     font-weight: bold;
     margin-bottom: 55px;
 }
 
-p {
-    line-height: 28px;
-    margin-bottom: 45px;
-}
 
 svg {
     margin: 0 auto;
@@ -43,6 +40,13 @@ circle {
     fill: none;
     stroke-linecap: round;
     transition: all 0.5s;
+}
+  .full-content-w{
+    text-align: center;
+  }
+  p {
+    line-height: 28px;
+    margin-bottom: 45px;
 }
 
 .mask {
@@ -74,12 +78,10 @@ circle {
 }
 
 .poem-wrap {
-    max-width: 600px;
     margin: 15px auto;
 }
 
 .poem-title {
-    max-width: 600px;
     margin: 0 auto;
     margin-top: -110px;
     position: relative;
@@ -88,8 +90,8 @@ circle {
 }
 
 .stanza {
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 80px;
     color: #666;
 }
 
@@ -105,11 +107,11 @@ circle {
 }
 
 footer {
+      font-size: 20px;
+
     margin: 0 auto;
     margin-top: 45px;
-    text-align: right;
     border-top: 1px solid #ddd;
-    max-width: 600px;
     padding: 25px;
 }
 
