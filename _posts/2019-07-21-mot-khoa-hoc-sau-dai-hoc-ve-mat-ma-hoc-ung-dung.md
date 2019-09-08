@@ -12,14 +12,18 @@ creationdate: 2019-07-21 00:00:00 +07:00
 Đây là tổng hợp các bài ghi chú lại khi tìm hiểu về mật mã cũng như tiền kỹ thuật số (bitcoin), blockchains, hợp đồng thông minh.\\
 Chủ để này khá khoai mấy lớp ở MIT và Stanford thường dạy cho các học sinh sau khi tốt nghiệp đai học. Còn mình ở Việt Nam thì tự học sau khi bị đuổi học.
 
-## Mật mã dòng
+## Stream Ciphers
 
-1. [The one time pad](/crypto/001-otp.html)
-2. [Trình tạo giả ngẫu nhiên](/crypto/002-prg.html)
-3. [Không đáng kể và đáng kể](/crypto/003-n&nn.html)
-4. [Tấn công vào OTP và mật mã dòng](/crypto/004-attacks-otp.html)
+1. [The one time pad](/crypto/001.html)
+2. [Trình tạo giả ngẫu nhiên](/crypto/002.html)
+3. [Không đáng kể và đáng kể](/crypto/003.html)
+4. [Tấn công vào OTP và mật mã dòng](/crypto/004.html)
+5. [Mật mã dòng trong thế giới thực](/crypto/005.html)
+6. [Định nghĩa bảo mật PRG](/crypto/006.html)
+7. [An ninh ngữ nghĩa](/crypto/007.html)
+8. [Mật mã dòng được bảo mật về mặt ngữ nghĩa](/crypto/008.html)
 
-
+## Block Ciphers
 
 ## SẼ NOTE TIẾP
 
