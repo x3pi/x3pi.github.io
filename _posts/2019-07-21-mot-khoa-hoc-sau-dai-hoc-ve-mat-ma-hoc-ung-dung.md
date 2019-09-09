@@ -26,6 +26,15 @@ Chủ để này khá khoai mấy lớp ở MIT và Stanford thường dạy cho
 ## Block Ciphers
 
 1. [Mật mã khối là gì?](/crypto/009.html)
+2. [The data encryption standard (DES)](/crypto/010.html)
+3. [Tấn công tìm kiếm đầy đủ](/crypto/011.html)
+4. [Thêm tấn công mật mã khối](/crypto/012.html)
+5. [Mật mã khối AES](/crypto/013.html)
+6. [Block ciphers from PRGs](/crypto/014.html)
+7. [Mật mã khối AES](/crypto/015.html)
+8. [Mật mã khối AES](/crypto/016.html)
+
+
 
 ## SẼ NOTE TIẾP
 
