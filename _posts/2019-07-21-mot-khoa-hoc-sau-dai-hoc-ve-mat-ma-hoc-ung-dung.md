@@ -31,8 +31,33 @@ Chủ để này khá khoai mấy lớp ở MIT và Stanford thường dạy cho
 4. [Thêm tấn công mật mã khối](/crypto/012.html)
 5. [Mật mã khối AES](/crypto/013.html)
 6. [Block ciphers from PRGs](/crypto/014.html)
-7. [Mật mã khối AES](/crypto/015.html)
-8. [Mật mã khối AES](/crypto/016.html)
+
+## Sử dụng mật mã khối
+
+1. [Ôn lại PRP và PRF](/crypto/015.html)
+2. [Phương thức hoạt đông - one time key](/crypto/016.html)
+3. [Bảo mật cho many-time key](/crypto/017.html)
+4. [Phương thức hoạt động - many-time key (CBC)](/crypto/018.html)
+5. [Phương thức hoạt động - many-time key (CTR)](/crypto/019.html)
+
+## Tin nhắn toàn vẹn
+
+1. [Mã xác thực tin nhắn](/crypto/020.html)
+2. [MAC dựa trên PRF](/crypto/021.html)
+3. [CBC-MAC và NMAC](/crypto/022.html)
+4. [Đệm MAC](/crypto/023.html)
+5. [PMAC và Carter-Wegman MAC](/crypto/024.html)
+
+
+## Chống va chạm
+
+1. [Giới thiệu](/crypto/025.html)
+2. [Tấn công sinh nhật](/crypto/026.html)
+3. [Mô hình Merkle-Damgard](/crypto/027.html)
+4. [Xây dựng các hàm nén](/crypto/028.html)
+5. [HMAC: MAC từ SHA-256](/crypto/029.html)
+6. [Thời gian tấn công vào xác minh MAC](/crypto/030.html)
+
 
 
 
