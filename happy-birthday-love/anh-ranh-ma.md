@@ -13,10 +13,13 @@ tags: []
 <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><div class="full-content-w"> <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script><div class="full-content-w"> <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js"></script><div class="full-content-w"> <div class="header-w"> <svg version="1.1" id="svg-xp" class="" width="260" height="260" viewBox="0 0 660 660"> </svg> <h1 class="poem-title">Anh rảnh mà</h1> </div> <div class="poem-wrap"> <p class="first stanza">
 Với em anh luôn rảnh mà
-Sẽ luôn che chở em nà
+Muốn được che chở em nà
 Chỉ là chờ em nói gì
 Sẵn sàng đến mang em đi.
-</p> </div> </div> <footer> <span>❤</span> Thời gian còn nhiều, chắc tháng gì đó 😀. Sẵn sàng chờ em nói lên suy nghĩ của mình. Cũng chuẩn bị tâm lý cho mọi tình huống rồi. Hạn chế đăng tâm trạng lên tường đi muốn gửi cho ai thì gửi trực tiếp đi. <span style="color: green">Lớn rồi đới!</span><span> ❤</span></footer> <div class="rc--circles-wrap"></div> <style id="jsbin-css"> body {
+</p> </div> </div> <footer> <span>❤</span><span style="color: green"></span><span> ❤</span></footer> <div class="rc--circles-wrap"></div> 
+<style id="jsbin-css"> 
+
+body {
     font-family: "Special Elite";
 }
 

@@ -58,6 +58,23 @@ Chủ để này khá khoai mấy lớp ở MIT và Stanford thường dạy cho
 5. [HMAC: MAC từ SHA-256](/crypto/029.html)
 6. [Thời gian tấn công vào xác minh MAC](/crypto/030.html)
 
+## Mã hóa xác thực
+
+1. [Tấn công tích cực vào mã hóa an toàn CPA](/crypto/031.html)
+2. [Định nghĩa](/crypto/032.html)
+3. [Chosen ciphertext attacks](/crypto/033.html)
+4. [Cấu trúc từ mật mã và MAC](/crypto/034.html)
+5. [Nghiên cứu điển hình: TLS](/crypto/035.html)
+6. [Các cuộc tấn công vào CBC paddings](/crypto/036.html)
+7. [Attacking non-atomic decryption](/crypto/037.html)
+
+## Odds	and	ends	
+
+
+
+
+
+
 
 
 
