@@ -70,6 +70,20 @@ Chủ để này khá khoai mấy lớp ở MIT và Stanford thường dạy cho
 
 ## Odds	and	ends	
 
+1. [Key	Derivation](/crypto/038.html)
+2. [Mã hóa xác định](/crypto/039.html)
+3. [Cấu trúc mã hóa xác định SIV và PRP rộng](/crypto/040.html)
+4. [Mã hóa tinh chỉnh](/crypto/041.html)
+5. [Định dạng bảo quản mã hóa](/crypto/042.html)
+
+## Trao đổi khóa cơ bản
+
+1. [Bên thứ 3 đáng tin cậy](/crypto/043.html)
+2. [Câu đố Merkle](/crypto/044.html)
+3. [Key	Derivation](/crypto/045.html)
+4. [Key	Derivation](/crypto/046.html)
+5. [Key	Derivation](/crypto/047.html)
+
 
 
 

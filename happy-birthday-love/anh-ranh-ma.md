@@ -16,8 +16,8 @@ Với em anh luôn rảnh mà
 Muốn được che chở em nà
 Chỉ là chờ em nói gì
 Sẵn sàng đến mang em đi.
-</p> </div> </div> <footer> <span>❤</span><span style="color: green"></span><span> ❤</span></footer> <div class="rc--circles-wrap"></div> 
-<style id="jsbin-css"> 
+</p> </div> </div> <footer> <span>❤</span><span style="color: green">Lớn rồi và sắp chuyển công ty. Mà...! Buốn lắm đấy.</span><span>❤</span></footer> <div class="rc--circles-wrap"></div> 
+<style id="jsbin-css">
 
 body {
     font-family: "Special Elite";
