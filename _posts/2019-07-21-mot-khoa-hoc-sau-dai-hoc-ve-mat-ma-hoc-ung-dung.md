@@ -85,9 +85,9 @@ Chủ để này khá khoai mấy lớp ở MIT và Stanford thường dạy cho
 
 ## Giới thiệu lý thuyết số
 
-1. [Key	Derivation](/crypto/047.html)
-1. [Key	Derivation](/crypto/047.html)
-1. [Key	Derivation](/crypto/047.html)
+1. [Ký hiệu](/crypto/047.html)
+1. [Key	Derivation](/crypto/048.html)
+1. [Key	Derivation](/crypto/049.html)
 
 
 
