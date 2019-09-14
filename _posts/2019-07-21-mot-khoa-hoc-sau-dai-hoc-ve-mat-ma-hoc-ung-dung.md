@@ -80,9 +80,15 @@ Chủ để này khá khoai mấy lớp ở MIT và Stanford thường dạy cho
 
 1. [Bên thứ 3 đáng tin cậy](/crypto/043.html)
 2. [Câu đố Merkle](/crypto/044.html)
-3. [Key	Derivation](/crypto/045.html)
-4. [Key	Derivation](/crypto/046.html)
-5. [Key	Derivation](/crypto/047.html)
+3. [Giao thức Diffie-Hellman](/crypto/045.html)
+4. [Mã hóa khóa công khai](/crypto/046.html)
+
+## Giới thiệu lý thuyết số
+
+1. [Key	Derivation](/crypto/047.html)
+1. [Key	Derivation](/crypto/047.html)
+1. [Key	Derivation](/crypto/047.html)
+
 
 
 
