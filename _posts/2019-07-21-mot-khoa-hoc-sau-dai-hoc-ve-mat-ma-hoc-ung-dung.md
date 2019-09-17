@@ -86,8 +86,22 @@ Chủ để này khá khoai mấy lớp ở MIT và Stanford thường dạy cho
 ## Giới thiệu lý thuyết số
 
 1. [Ký hiệu](/crypto/047.html)
-1. [Key	Derivation](/crypto/048.html)
-1. [Key	Derivation](/crypto/049.html)
+2. [Fermat và Euler](/crypto/048.html)
+3. [Modular e’th roots](/crypto/049.html)
+4. [Thuật toán số học](/crypto/050.html)
+5. [Vấn đề khó khăn](/crypto/051.html)
+
+
+## Mã hóa khóa công khai từ hoán vị bẫy
+
+1. [Mã hóa khóa công khai: định nghĩa và bảo mật](/crypto/052.html)
+2. [Constructions](/crypto/053.html)
+3. [Các RSA bẫy hoán vị](/crypto/054.html)
+4. [Ký hiệu](/crypto/055.html)
+5. [Ký hiệu](/crypto/056.html)
+6. [Ký hiệu](/crypto/057.html)
+
+
 
 
 
