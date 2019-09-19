@@ -10,8 +10,7 @@ creationdate: 2019-07-21 00:00:00 +07:00
 ## Giới thiệu
 
 Đây là tổng hợp các bài ghi chú lại khi tìm hiểu về mật mã cũng như tiền kỹ thuật số (bitcoin), blockchains, hợp đồng thông minh.\\
-Chủ để này khá khoai mấy lớp ở MIT và Stanford thường dạy cho các học sinh sau khi tốt nghiệp đai học. Còn mình ở Việt Nam thì tự học sau khi bị đuổi học.
-
+Chủ để này khá khoai mấy lớp ở MIT và Stanford thường dạy cho các học sinh sau khi tốt nghiệp đại học.
 ## Stream Ciphers
 
 1. [The one time pad](/crypto/001.html)
@@ -96,10 +95,18 @@ Chủ để này khá khoai mấy lớp ở MIT và Stanford thường dạy cho
 
 1. [Mã hóa khóa công khai: định nghĩa và bảo mật](/crypto/052.html)
 2. [Constructions](/crypto/053.html)
-3. [Các RSA bẫy hoán vị](/crypto/054.html)
-4. [Ký hiệu](/crypto/055.html)
-5. [Ký hiệu](/crypto/056.html)
-6. [Ký hiệu](/crypto/057.html)
+3. [RSA hoán vị bẫy](/crypto/054.html)
+4. [PKCS 1](/crypto/055.html)
+5. [RSA là một hàm một chiều?](/crypto/056.html)
+6. [RSA trong thực tế](/crypto/057.html)
+
+## Mã hóa khóa công khai từ Diffie-Hellman
+
+1. [Hệ thống ElGamal Public-key](/crypto/058.html)
+2. [RSA trong thực tế](/crypto/059.html)
+3. [RSA trong thực tế](/crypto/060.html)
+4. [RSA trong thực tế](/crypto/061.html)
+5. [RSA trong thực tế](/crypto/062.html)
 
 
 
