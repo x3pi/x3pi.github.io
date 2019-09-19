@@ -103,7 +103,7 @@ Chủ để này khá khoai mấy lớp ở MIT và Stanford thường dạy cho
 ## Mã hóa khóa công khai từ Diffie-Hellman
 
 1. [Hệ thống ElGamal Public-key](/crypto/058.html)
-2. [RSA trong thực tế](/crypto/059.html)
+2. [ElGamal	Security](/crypto/059.html)
 3. [RSA trong thực tế](/crypto/060.html)
 4. [RSA trong thực tế](/crypto/061.html)
 5. [RSA trong thực tế](/crypto/062.html)

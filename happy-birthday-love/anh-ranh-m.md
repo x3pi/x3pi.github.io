@@ -16,7 +16,7 @@ Với em anh luôn rảnh mà
 Muốn được che chở em nà
 Chỉ là chờ em nói gì
 Sẵn sàng đến mang em đi.
-</p> </div> </div> <footer> <span>❤</span><span style="color: green">Cái ở trên viết trước khi bị chặn đó. Lớn rồi! Có những lúc có thể trẻ con cũng được nhưng nhiều lúc nên nói chuyện như người lớn. Nói một câu không cần chặn em cũng không thèm nhắn tin đâu. Học cách kiềm chế và hành động theo cảm xúc bởi vì <span style="color: red"><b>cảm xúc thường là sai</b></span>. Để còn mà lấy chồng. Tình yêu chỉ là thứ để bắt đầu thôi phải cùng nhau làm nhiều thứ mới xây dựng hạnh phúc được. Nếu không phải với em thì cũng với người khác.</span><span>❤</span></footer> <div class="rc--circles-wrap"></div>
+</p> </div> </div> <footer> <span>❤</span><span style="color: green">Tình yêu chỉ là thứ để bắt đầu thôi phải cùng nhau làm nhiều thứ mới xây dựng hạnh phúc được.</span><span>❤</span></footer> <div class="rc--circles-wrap"></div>
 <style id="jsbin-css">
 
 body {
