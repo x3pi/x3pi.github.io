@@ -1690,8 +1690,8 @@
 	/**
 	 * Utility for deserializing a value.
 	 *
-	 * @param {*} value
-	 * @return {*}
+	 * @param {\ast} value
+	 * @return {\ast}
 	 */
 	function deserialize( value ) {
 
