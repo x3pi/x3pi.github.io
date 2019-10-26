@@ -74,7 +74,7 @@ Không có máy chủ trung thực $i, j$ đầu ra $b_ {i} \neq b_ {j}$
 - Áp dụng $\geq 2 \mathrm {N} / 3$ phiếu bầu cho cả $b_ {i}$ và $b_ {j}$
 - Đặt $S_ {i} \subseteq [N]$ là tập hợp các máy chủ được bình chọn cho $b_ {i}$
 - Đặt $S_ {j} \subseteq [N]$ là tập hợp các máy chủ được bình chọn cho $b_ {j}$
-- $| S_ {i} \cap S_ {j} | \geq N / 3,$ do đó các bộ giao nhau trên ít nhất một máy chủ trung thực vì ít hơn $\mathrm{N} / 3$ máy chủ bị hỏng
+- <span>$|S_ {i} \cap S_ {j} | \geq N / 3$</span>, do đó các bộ giao nhau trên ít nhất một máy chủ trung thực vì ít hơn $\mathrm{N}/3$ máy chủ bị hỏng
 - Điều này ngụ ý một máy chủ trung thực được bình chọn cho các giá trị riêng biệt, một mâu thuẫn.
 
 ## From BA to SMR
@@ -149,7 +149,7 @@ Tiếp theo: Cuộc bầu cử ủy ban / lãnh đạo được thiết kế đ�
 - Theo mô hình thứ hai
 - Ban đầu được trình bày trong mô hình cấp phép PoW, sau đó được điều chỉnh để phù hợp với các mô hình cấp phép khác [PassShi'17]
 - Là "hoàn toàn không được phép" trong cài đặt PoW:
-    - Không biết chính xác $\#$ của các nút tham gia
+    - Không biết chính xác $#$ của các nút tham gia
     - Các nút đến và đi, tức là "tham gia muộn"
     - Không xác thực: bất kỳ ai cũng có thể tham gia bằng cách giải quyết PoW
 
@@ -192,11 +192,6 @@ Xác suất khai thác chuỗi dài nhất tư nhân nhanh hơn phần trung th�
 
 
 
-
-
-
-
-## 
 
 
 

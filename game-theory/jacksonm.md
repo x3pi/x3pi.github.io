@@ -1,5 +1,5 @@
 ---
-title: Một giới thiệu ngắn về Lý thuyết trò chơi<br/>(Matthew O. Jackson, Stanford University)
+title: Một giới thiệu ngắn về Lý thuyết trò chơi<br/><sub>(Matthew O. Jackson, Stanford University)</sub>
 date: 2019-10-17 00:00:00 +0000
 layout: 'post'
 permalink: "/game-theory/jacksonm.html"
