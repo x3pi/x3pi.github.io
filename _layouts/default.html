@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-    <body>
+<body>
 
-    {% include header.html %}
+  {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrap">
+  <div class="page-content">
+    <div class="wrap">
       {{ content }}
-      </div>
     </div>
+  </div>
 
-    {% include footer.html %}
+  {% include footer.html %}
 
-    <!-- mathjax -->
-    <script type="text/x-mathjax-config">
+  <!-- mathjax -->
+  <script type="text/x-mathjax-config">
 		MathJax.Hub.Config({
       tex2jax: {
         inlineMath: [['$','$']],
         displayMath: [ ['$$','$$'] ],
         processEscapes: true
       },
+
+      TeX: {
+        TagSide: "left",
+        Macros: {
+          RR: '{\\bf R}',
+          bold: ['{\\bf #1}',1]
+        },
+        equationNumbers: {autoNumber: "all"} 
+      },
+
       styles: {
         ".mjx-chtml": {
           color: "#009933",
           "font-size": "100% !important",
         }
-      }
+      },
     
       /*
       styles: {
@@ -53,8 +63,28 @@
           }
         }
         */
-		});
+    });
+    
 	</script>
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML-full"></script>
-    </body>
+  <script type="text/javascript"
+    src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML-full"></script>
+  <script>
+    var all = document.getElementsByClassName("c")
+    for (var i = 1, max = all.length; i < max; i++) {
+      all[i].setAttribute('data-value', i + '. ')
+      all[i].setAttribute('id', i)
+    }
+    function autoID(){
+      var all = document.getElementsByClassName("mjx-full-width")
+      for (var i = 0, max = all.length; i < max; i++) {
+        all[i].setAttribute('id', 'e' + i)
+      }
+    }
+
+    window.onload = function () {
+      MathJax.Hub.Queue(autoID)
+    }
+  </script>
+</body>
+
 </html>

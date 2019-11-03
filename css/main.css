@@ -1,12 +1,20 @@
 /* Base */
 
-
-
 /* ----------------------------------------------------------*/
 
 * {
     margin: 0;
     padding: 0;
+}
+
+.c {
+    display: inline;
+    color: #00f;
+    font-size: 12px;
+}
+
+.c:after {
+    content: attr(data-value);
 }
 
 html, body {
@@ -125,7 +133,7 @@ a:visited {
 
 /* hr style */
 
-hr{
+hr {
     margin: auto !important;
     width: 100px;
     position: relative;
@@ -150,8 +158,8 @@ hr:before {
     /* animation: pulse 2s infinite; */
 }
 
-
 /* pules effect */
+
 /*
 @-webkit-keyframes pulse {
     0% {
@@ -180,6 +188,7 @@ hr:before {
     }
 }
 */
+
 /* Utility */
 
 .wrap:before, .wrap:after {
@@ -459,7 +468,7 @@ hr:before {
 }
 
 .post-header h1 {
-    font-size: 36px; 
+    font-size: 36px;
     letter-spacing: -1.75px;
     line-height: 1;
     font-weight: 300;
@@ -535,6 +544,7 @@ hr:before {
 .post ul, .post ol {
     margin-left: 1.35em;
 }
+
 /*
 .post pre code {
     border: 0;
@@ -544,6 +554,7 @@ hr:before {
 */
 
 /* terminal */
+
 /*
 .post pre.terminal {
     border: 1px solid #000;
@@ -558,9 +569,10 @@ hr:before {
     background-color: #333;
 }
 */
+
 /* Syntax highlighting styles */
 
-.hljs{
+.hljs {
     /* border-left: 1px solid #009933!important; */
     border: 1px solid #3f87a6;
     border-left: 5px solid #3f87a6
@@ -1043,7 +1055,7 @@ hr:before {
 }
 
 @media print {
-    .fb-comments, .site-footer, .interactive{
+    .fb-comments, .site-footer, .interactive {
         display: none !important;
     }
 }
