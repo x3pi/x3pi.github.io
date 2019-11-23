@@ -18,5 +18,3 @@ Em có sợ bị từ chối không? Anh thì không sợ bị từ chối đâu
 ## Nếu em yêu anh:
 
 Anh mong em có thể vượt qua lòng tự ái của bản thân, định kiến trong suy nghĩ, nỗi sợ hãi trong lòng, nói chuyện với anh nhé. Chúng ta có thể xây dựng một mỗi quan hệ tốt đẹp mà.
-Có thể anh chưa cho em những điều em muốn. Nhưng anh mong rằng chúng mình có thể cùng nhau tạo ra những điều đó.
-
