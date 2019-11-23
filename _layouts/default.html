@@ -70,14 +70,14 @@
     src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML-full"></script>
   <script>
     var all = document.getElementsByClassName("c")
-    for (var i = 1, max = all.length; i < max; i++) {
-      all[i].setAttribute('data-value', i + '. ')
-      all[i].setAttribute('id', i)
+    for (var i = 0, max = all.length; i < max; i++) {
+      all[i].setAttribute('data-value', i + 1 + '. ')
+      all[i].setAttribute('id', i+1)
     }
     function autoID(){
       var all = document.getElementsByClassName("mjx-full-width")
       for (var i = 0, max = all.length; i < max; i++) {
-        all[i].setAttribute('id', 'e' + i)
+        all[i].setAttribute('id', 'e' + (i+1))
       }
     }
 
