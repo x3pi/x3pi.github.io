@@ -1,8 +1,8 @@
 ---
-title: Em nhé!
+title: Nếu không biết làm gì
 date: 2019-11-23 21:45:00 +0000
 layout: 'post'
-permalink: "/em-nhe"
+permalink: "/neu-khong-biet-lam-gi"
 creationdate: ''
 author: ''
 tags: []
