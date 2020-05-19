@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="{{ site.baseurl }}/live/css/codemirror-5-31-0.css" rel="stylesheet" />
+    <link href="{{ site.baseurl }}/live/css/editor-js.css" rel="stylesheet" />
+    <script>"use strict"; function postToKuma(e) { window.parent.postMessage(e, "*") } postToKuma({ markName: "interactive-editor-loading" }), document.addEventListener("readystatechange", function (e) { switch (e.target.readyState) { case "interactive": postToKuma({ markName: "interactive-editor-interactive", measureName: "ie-time-to-interactive", startMark: "interactive-editor-loading", endMark: "interactive-editor-interactive" }); break; case "complete": postToKuma({ markName: "interactive-editor-complete", measureName: "ie-time-to-complete", startMark: "interactive-editor-loading", endMark: "interactive-editor-complete" }) } });</script>
+    {% for lib in page.libs %}
+        <script src="{{ lib }}"></script>
+    {% endfor %}
+</head>
+
+<body>
+    <section id="static">
+        <pre>
+            <code id="static-js">{{ content | remove: '' | remove: '' }}</code>
+        </pre>
+    </section>
+    <section id="live" class="live hidden">
+        <header>
+            <h4>{{ page.title | default: site.title }}</h4>
+            <div id="myDIV" class="header">
+                <input type="text" id="myInput" placeholder="Add link javascript...">
+                <button onclick="newElement()" class="button">Add</button>
+            </div>
+
+            <ul id="myUL">
+                {% for lib in page.libs %}
+                    <li><a href="{{ lib }}" target="_blank">{{ lib }}</a></li>
+                {% endfor %}
+            </ul>
+
+            <script>
+                // Create a "close" button and append it to each list item
+                var myNodelist = document.getElementsByTagName("LI");
+                var i;
+                for (i = 0; i < myNodelist.length; i++) {
+                    var span = document.createElement("SPAN");
+                    var txt = document.createTextNode("ok");
+                    span.className = "close";
+                    span.appendChild(txt);
+                    myNodelist[i].appendChild(span);
+                }
+
+                // Create a new list item when clicking on the "Add" button
+                function newElement() {
+
+                    var inputValue = document.getElementById("myInput").value;
+
+
+                    
+                    if (inputValue === '') {
+                        alert("You must write something!");
+                    } else {
+                        var script = document.createElement('script');
+                        script.type = 'text/javascript';
+                        script.src = inputValue;
+                        document.head.appendChild(script);
+
+
+                        var li = document.createElement("li")
+                        var a = document.createElement('a')
+                        var linkText = document.createTextNode(inputValue);
+                        a.appendChild(linkText)
+                        a.title = inputValue
+                        a.href = inputValue
+                        a.setAttribute("target","_blank")
+                        li.appendChild(a)
+
+                        var span = document.createElement("SPAN")
+                        var txt = document.createTextNode("ok")
+                        span.className = "close"
+                        span.appendChild(txt)
+                        li.appendChild(span)
+                        
+                        document.getElementById("myUL").appendChild(li);
+
+                    }
+                    document.getElementById("myInput").value = ""
+                }
+            </script>
+        </header>
+        <div id="editor" class="editor"></div>
+
+        <div class="output-container">
+            <div class="buttons-container">
+                <button id="execute" class="button run" type="button">Run &rsaquo;</button>
+                <button id="reset" type="button" class="button">Reset</button>
+            </div>
+            <div id="console" class="output"><code></code></div>
+        </div>
+    </section>
+    <script src="{{ site.baseurl }}/live/js/codemirror-5-31-0.js"></script>
+    <script src="{{ site.baseurl }}/live/js/editor-js.js"></script>
+</body>
+
+</html>

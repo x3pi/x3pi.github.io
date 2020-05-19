@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2019 by anonymous (http://jsbin.com/kelapedupa/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+
+<style id="jsbin-css">
+.lds-hourglass {
+  padding: 40px;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 26px solid #fcf;
+  border-color: #fcf transparent #fcf transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+.img{
+  padding: 50px;
+  display: block;
+  margin: auto;
+   width: 164px;
+  height: 164px;
+}
+.text-load, .content{
+  text-align: center;
+    margin: auto;
+
+}
+
+#ct{
+  display:none
+}
+
+
+
+/* This code loads all of our desired font faces of the Lobster Two fonts from the Google Fonts servers. */
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two:700&display=swap");
+
+/* HINT: You should define font faces before you use them as values. Here are the URLs for the Roboto faces:
+
+Roboto Regular
+"https://cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/fonts/roboto/Roboto-Regular.woff"
+
+Roboto Regular Italic
+"https://cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/fonts/roboto/Roboto-RegularItalic.woff"
+
+Roboto Bold
+"https://cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/fonts/roboto/Roboto-Bold.woff" */
+
+/* Color values for this project:
+   Light green for the text-shadow - rgba(102, 153, 51, 0.5)
+   Medium green for the headers - rgb(102, 153, 51)
+   Dark green for the links - rgb(64, 96, 32)
+   Pale yellow for the mark - rgb(252, 248, 227) */
+
+/* Roboto Regular Normal */
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/fonts/roboto/Roboto-Regular.woff")
+    format("woff");
+}
+
+/* Roboto Regular Italic */
+@font-face {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/fonts/roboto/Roboto-RegularItalic.woff")
+    format("woff");
+}
+
+/* Roboto Bold Regular */
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/fonts/roboto/Roboto-Bold.woff")
+    format("woff");
+}
+
+/* Though you don't see the <body> element in the HTML panel, it's there. It wraps around the HTML you actually can see. */
+body {
+  font-family: Roboto, sans-serif;
+}
+
+/* The <div> element will place all of our written content in a column in the center of the screen. */
+div {
+  margin: auto;
+  max-width: 60ch;
+
+  /* Since we don't cover padding in detail in this course, I'm providing your project with this declaration. Change it at your own risk! */
+  padding: 0 12px;
+}
+
+header {
+  text-align: center;
+}
+
+h1,
+h3 {
+  color: #fcccd7;
+  font-family: "Lobster Two", cursive;
+}
+
+h1 {
+  font-size: 4rem;
+  text-shadow: -2px 2px white, -4px 4px rgba(102, 153, 51, 0.5);
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+p,
+li {
+  line-height: 1.5;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: rgb(64, 96, 32);
+}
+
+mark {
+  background-color: rgb(252, 248, 227);
+}
+
+</style>
+</head>
+
+<body bgcolor="#41b3a3">
+    <div class="center">
+        <img class="img" src="https://i.ibb.co/8x6spB7/facet.png" alt="face">
+        <div id="load">
+            <h3 class="text-load">Trí tuệ nhân tạo đang phân tích dữ liệu</h3>
+            <div class="lds-hourglass"></div>
+        </div>
+        <div id="ct">
+            <h3 class="content">Trạng thái tương tư</br>Khi nào hết FA? Trong tháng này </h3>
+            <p>
+                Tình yêu chân thành sẽ đến với những người không ngừng cố gắng và tin tưởng vào bản thân. Đừng quá hấp tấp vội vàng, tình yêu của bạn ở gần đây thôi, luôn bên bạn và đến thời điểm thích hợp người ấy sẽ thổ lộ. Hãy chủ động hơn trong tình cảm và mạnh dạn bày tỏ lòng mình nhiều hơn bạn nhé.
+            </p>
+        </div>
+    </div>
+<script>
+setTimeout(function(){  
+  
+  document.getElementById("load").style.display = "none";
+   document.getElementById("ct").style.display = "block";
+}, 6000);
+</script>
+</body>
+
+</html>
