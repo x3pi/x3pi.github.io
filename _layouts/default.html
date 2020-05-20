@@ -68,7 +68,8 @@
 
     window.onload = function () {
       MathJax.Hub.Queue(autoID)
-      if (typeof Fasonry != "undefined") { Fasonry() }
+      //if (typeof Fasonry != "undefined") { Fasonry() }
+      setTimeout(Fasonry, 1000)
     }
     function changeWidth() {
       MathJax.Hub.Queue(
