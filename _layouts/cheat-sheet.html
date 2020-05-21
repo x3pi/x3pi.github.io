@@ -5,13 +5,14 @@ layout: default
 <div class="post">
 
   <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    <h3>{{ page.subTitle }}</h3>
     <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{%if page.autor %}•{{ page.author }}{% endif %}  {% if page.meta %} • {{ page.meta }}{% endif %} </p>
   </header>
   <article class="post-content">
   {{ content }}
   </article>
   
- 
   <!--
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3&appId=398735284090310&autoLogAppEvents=1"></script>  
@@ -37,4 +38,24 @@ layout: default
    })();
    </script>
    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
 </div>
+
+<script type="text/javascript" src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<script>
+  var Fasonry = function() {
+     console.log("FFF")
+      var elem = document.getElementsByClassName('grid');
+      var arrayLength = elem.length;
+      for (var i = 0; i < arrayLength; i++) {
+           new Masonry(elem[i], {
+              // options
+              itemSelector: '.card',
+              columnWidth: 345,
+              horizontalOrder: true,
+              gutter: 60
+          });
+          //Do something
+      }
+  }
+  </script>

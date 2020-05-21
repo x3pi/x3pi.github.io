@@ -1,0 +1,29 @@
+---
+layout: post
+---
+<div class="view_year">
+{% assign sorted_pages = site.cs  | sort:"order" | reverse %}
+{% for cs in sorted_pages %}
+{% assign beatles = cs.url | split: "/" %}
+{% assign beatles2 = page.url | split: "/" %}
+{% if beatles[2] == beatles2[2] %}
+{% if cs.permalink != page.url %}
+
+<div class="materials-item">
+    <div class="tt">
+      <a href="{{ cs.url }}">{{ cs.title }}</a>
+    </div>
+    <div class="kw">
+
+      {% for tag in cs.tags  %}
+
+      <a>{{tag}}</a>
+
+      {% endfor %}
+
+    </div>
+</div>
+{% endif %}
+{% endif %}
+{% endfor %}
+</div>
