@@ -7,7 +7,7 @@ active: "ctecb"
 order: 1
 libjs: 
 - "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.7.2"
-published: false
+published: true
 
 ---
 
