@@ -14,6 +14,9 @@ collections:
   ctecb:
     title: ctecb
     output: true
+  language:
+    title: language
+    output: true
 email: x2p3141@gmail.com
 facebook: xx3pi
 description: My blog

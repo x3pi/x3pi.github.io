@@ -1,11 +1,11 @@
 ---
 title: Có thể em chưa biết
 layout: default
-permalink:  "/ctecb"
-active: "ctecb"
+permalink:  "/language"
+active: "language"
 ---
 <div class="view_year">
-{% assign sorted_pages = site.ctecb  | sort:"order" | reverse %}
+{% assign sorted_pages = site.language  | sort:"order" | reverse %}
 {% for cs in sorted_pages %}
 {% assign beatles = cs.url | split: "/" %}
 {% for member in beatles %}

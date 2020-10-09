@@ -1,61 +1,111 @@
 ---
 layout: default
 ---
+<style>
+  .wrap {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+    zoom: 1;
+  }
+
+  @media (min-width:1300px) {
+    .grid>.card {
+        width: 540px !important;
+    }
+}
+
+/***grid card***/
+
+.grid {
+    margin: 0 auto;
+}
+
+
+.grid>.card {
+    width: calc(100% - 50px);
+    background: #fefefe;
+    border: 1px solid #dddddd;
+    box-shadow: 0 1px 2px rgba(182, 185, 190, 0.5);
+    margin: 0 0px 15px;
+    padding: 24px;
+    transition: opacity .4s ease-in-out;
+}
+
+.card__header {
+    padding-bottom: 5px;
+}
+
+.card__header h3 {
+    color: #205caa;
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-bottom: 1px solid #EAEAEA;
+    font-size: 1em;
+}
+
+.card__body {
+    font-size: 0.9em;
+}
+</style>
 
 <div class="post">
 
   <header class="post-header">
     <h1>{{ page.title }}</h1>
     <h3>{{ page.subTitle }}</h3>
-    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{%if page.autor %}•{{ page.author }}{% endif %}  {% if page.meta %} • {{ page.meta }}{% endif %} </p>
+    <p class="meta">
+      {%if page.date %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}{%if page.author %}•{{ page.author }}{% endif %}
+      {% if page.meta %} • {{ page.meta }}{% endif %} </p>
   </header>
   <article class="post-content">
-  {{ content }}
+    {{ content }}
   </article>
-  
+
   <!--
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3&appId=398735284090310&autoLogAppEvents=1"></script>  
   <div class="fb-comments" data-href="https://x3pi.github.io{{ page.url }}" data-width="100%" data-numposts="10"></div>  
    -->
-   <div id="disqus_thread"></div>
-   <script>
-   
-   /**
-   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-   /*
-   var disqus_config = function () {
-   this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-   this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-   };
-   */
-   (function() { // DON'T EDIT BELOW THIS LINE
-   var d = document, s = d.createElement('script');
-   s.src = 'https://x3pi.disqus.com/embed.js';
-   s.setAttribute('data-timestamp', +new Date());
-   (d.head || d.body).appendChild(s);
-   })();
-   </script>
-   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <div id="disqus_thread"></div>
+  <script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function () { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://x3pi.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
 
 </div>
 
 <script type="text/javascript" src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 <script>
-  var Fasonry = function() {
-     console.log("FFF")
-      var elem = document.getElementsByClassName('grid');
-      var arrayLength = elem.length;
-      for (var i = 0; i < arrayLength; i++) {
-           new Masonry(elem[i], {
-              // options
-              itemSelector: '.card',
-              columnWidth: 345,
-              horizontalOrder: true,
-              gutter: 60
-          });
-          //Do something
-      }
+  var Fasonry = function () {
+    console.log("FFF")
+    var elem = document.getElementsByClassName('grid');
+    var arrayLength = elem.length;
+    for (var i = 0; i < arrayLength; i++) {
+      new Masonry(elem[i], {
+        // options
+        itemSelector: '.card',
+        columnWidth: 550,
+        horizontalOrder: true,
+        gutter: 60
+      });
+      //Do something
+    }
   }
-  </script>
+</script>
