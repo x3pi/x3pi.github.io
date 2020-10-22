@@ -1,21 +1,60 @@
-<!--
-    <div class="wrap title-wrap">
-        <a class="site-title" href="{{ site.baseurl }}/"><b>{{ site.title }}</b></a>
-          
-<div class="topnav" id="myTopnav">
-    <div id="topnavc">
-    <a href="{{ site.baseurl }}/" id="home" >Van Phuc</a>
-    <a href="{{ site.baseurl }}/computer" id="cs">Computer Science</a>
-    <a href="{{ site.baseurl }}/ctecb" id="ctecb">Có thể em chưa biết</a>
-    <a href="{{ site.baseurl }}/mind-editor" id="mind-editor">Mind Editor</a>
-    <a href="#about">About</a>
+---
+layout: default2
+---
+<script src="https://cdn.jsdelivr.net/npm/regenerator-runtime"></script>
+<script src="{{ " /js/MindElixir.js " | prepend: site.baseurl }}"></script>
 
-    </div>
+<div class="post">
+  <article class="post-content">
+    <div id="map"></div>
+    <style>
+      #map {
+        height: 800px;
+        width: 100%;
+      }
+    </style>
+    {{ content }}
+  </article>
+
 </div>
 
--->
+<script>
+  let mind = new MindElixir({
+    el: '#map',
+    direction: MindElixir.SIDE,
+    // create new map data
+    data: MindElixir.new('new topic'),
+    // or set as data that is return from `.getAllData()`
+    data: data1,
+    draggable: true, // default true
+    contextMenu: true, // default true
+    toolBar: true, // default true
+    nodeMenu: true, // default true
+    keypress: true, // default true
+    locale: 'en', // [zh_CN,zh_TW,en,ja]
+    contextMenuOption: {
+      focus: true,
+      link: true
+    },
+    allowUndo: false,
+    before: {
+      insertSibling(el, obj) {
+        return true
+      },
+      async addChild(el, obj) {
+        return true
+      },
+    },
+  })
+  mind.init()
 
+  setTimeout(function () {
+    mind.linkDiv()
+  }, 1000)
 
+</script>
+
+<link rel="stylesheet" href="{{ " /css/main.css " | prepend: site.baseurl }}">
 
 <div class=" topnav">
 
@@ -42,8 +81,3 @@
   <a href="/" class="text-dark" id="about">About</a>
 
 </div>
-
-<script>
-  {% if  page.active %} document.getElementById("{{ page.active}}").className = "active"; {% else %} document.getElementById("home").className = "active" {% endif %}
-
-</script>

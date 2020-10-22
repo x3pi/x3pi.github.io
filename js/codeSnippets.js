@@ -97,8 +97,10 @@ async function executeCodeSnippet(consoleLogElement, codeSnippet) {
 function initCodeBlocks(selector) {
   // Find all the code blocks.
   var jsEd =  Array.prototype.slice.call(document.querySelectorAll(".code"))
+  console.log(jsEd);
   var editors = []
   jsEd.forEach(function(code){
+    console.log(code);
 	  var editor = CodeMirror.fromTextArea(code, {
         lineNumbers: true,
         viewportMargin: Infinity

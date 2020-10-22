@@ -2,7 +2,7 @@
 title: Có thể em chưa biết
 layout: default
 permalink:  "/language"
-active: "language"
+active:
 ---
 <div class="view_year">
 {% assign sorted_pages = site.language  | sort:"order" | reverse %}

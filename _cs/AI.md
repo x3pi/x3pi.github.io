@@ -1,6 +1,6 @@
 ---
 layout: list-post
-permalink:  "/cs/math"
+permalink:  "/cs/ai"
 active: "cs"
 published: false
 ---

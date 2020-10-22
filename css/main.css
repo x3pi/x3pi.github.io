@@ -38,11 +38,20 @@ img {
 .topnav {
     overflow: hidden;
     background-color: #fff;
-    max-width: 1600px;
     margin: 0 auto;
+    padding: 5px 5px 5px 15px;
     text-align: center;
-    box-shadow: 0 0.5px 0.5px 0px rgba(0, 0, 0, .2), 0 0.5px 0.5px 0 rgba(0, 0, 0, .14), 0 0.5px 0.5px 0 rgba(0, 0, 0, .12);
+    max-width: 900px;
+    border-bottom: 1px solid #dee2e6!important;
+    display: flex!important;
+    justify-content: space-between!important;
 }
+
+.ava{
+    display: flex!important;
+    align-items: center!important;
+}
+
 
 #topnavc {
     display: inline-block;
@@ -72,32 +81,7 @@ img {
     display: none;
 }
 
-@media screen and (max-width: 650px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-}
 
-@media screen and (max-width: 650px) {
-    .topnav.responsive {
-        padding-bottom: 20px;
-        position: relative;
-    }
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: center;
-    }
-}
 
 h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
@@ -193,11 +177,12 @@ hr {
     display: block;
     padding: 3px;
 }
-
-
-.materials-item:nth-child(even) {
-    background-color: #f7f6f1;
+.materials-item  {
+    margin-top: 20px;
+    box-shadow: 0 0 10px #eee;
+    border: 1px solid #dee2e6!important;
 }
+
 
 /* Custom CSS rules for content */
 
@@ -315,71 +300,6 @@ hr {
     letter-spacing: -.5px;
 }
 
-/* Site footer */
-
-.site-footer {
-    border-top: 1px solid #e8e8e8;
-    padding: 30px 0;
-}
-
-.footer-heading {
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: -.5px;
-    margin-bottom: 15px;
-}
-
-.site-footer .column {
-    float: left;
-    margin-bottom: 15px;
-}
-
-.footer-col-1 {
-    width: 270px;
-    /*fallback*/
-    width: -webkit-calc(35% - 10px);
-    width: -moz-calc(35% - 10px);
-    width: -o-calc(35% - 10px);
-    width: calc(35% - 10px);
-    margin-right: 10px
-}
-
-.footer-col-2 {
-    width: 175px;
-    /*fallback*/
-    width: -webkit-calc(23.125% - 10px);
-    width: -moz-calc(23.125% - 10px);
-    width: -o-calc(23.125% - 10px);
-    width: calc(23.125% - 10px);
-    margin-right: 10px
-}
-
-.footer-col-3 {
-    width: 335px;
-    /*fallback*/
-    width: -webkit-calc(41.875%);
-    width: -moz-calc(41.875%);
-    width: -o-calc(41.875%);
-    width: calc(41.875%);
-}
-
-.site-footer ul {
-    list-style: none;
-}
-
-.site-footer li, .site-footer p {
-    font-size: 15px;
-    letter-spacing: -.3px;
-    color: #828282;
-}
-
-.github-icon-svg, .twitter-icon-svg {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    position: relative;
-    top: 3px;
-}
 
 /* Page Content styles */
 
@@ -442,7 +362,7 @@ hr {
 }
 
 .post-content>* {
-    margin: 20px 0;
+    margin: 0px 0;
 }
 
 .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
@@ -936,25 +856,6 @@ hr {
 
 /* ----------------------------------------------------------*/
 
-@media screen and (max-width: 750px) {
-    .footer-col-1 {
-        width: 50%;
-    }
-    .footer-col-2 {
-        width: 45%;
-        /*fallback*/
-        width: -webkit-calc(50% - 10px);
-        width: -moz-calc(50% - 10px);
-        width: -o-calc(50% - 10px);
-        width: calc(50% - 10px);
-        margin-right: 0;
-    }
-    .site-footer .column.footer-col-3 {
-        width: auto;
-        float: none;
-        clear: both;
-    }
-}
 
 @media screen and (max-width: 650px) {
     #bfloat {
@@ -1022,12 +923,7 @@ hr {
     .post-content ul, .post-content ol {
         padding-left: 10px;
     }
-    .site-footer .column {
-        float: none;
-        clear: both;
-        width: auto;
-        margin: 0 0 15px;
-    }
+
 }
 
 .icon>svg {
@@ -1040,32 +936,40 @@ hr {
 
 @media print {
 
-    .fb-comments, .site-footer, .interactive, .topnav {
+    .fb-comments, .interactive, .topnav {
         display: none !important;
     }
     #disqus_thread {
         display: none !important;
     }
-
+    
+    .break {page-break-after: always;}
+    
+/*
     .grid>.card {
         width: 540px !important;
     }
+    */
 }
 
 /*CodeSnippets*/
 
+.language-js {
+    margin-top: 8px;
+
+}
 .snippet-console {
-    margin: -20px 0 24px 0;
+    margin: 0px 0 0px 0;
     min-height: 24px;
     position: relative;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Roboto Mono", monospace;
 }
 
 .snippet-console-log {
     background: #F7F6F1;
     padding: 8px 16px;
-    min-height: 16px;
+    min-height: 14px;
     white-space: pre-wrap;
 }
 
@@ -1089,7 +993,7 @@ hr {
 
 .CodeMirror {
     border: 1px solid #eee;
-    font-size: 16px;
+    font-size: 14px;
     height: auto !important;
 }
 
@@ -1103,3 +1007,80 @@ hr {
     font-family: 'Roboto', serif;
 }
 
+/*Tree*/
+
+
+/* It's supposed to look like a tree diagram */
+.tree, .tree ul, .tree li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.tree {
+    margin: 0 0 1em;
+    text-align: center;
+}
+.tree, .tree ul {
+    display: table;
+}
+.tree ul {
+  width: 100%;
+}
+    .tree li {
+        display: table-cell;
+        padding: .5em 0;
+        vertical-align: top;
+    }
+        /* _________ */
+        .tree li:before {
+            outline: solid 1px #666;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .tree li:first-child:before {left: 50%;}
+        .tree li:last-child:before {right: 50%;}
+
+        .tree code, .tree spa {
+            border: solid .1em #666;
+            border-radius: .2em;
+            display: inline-block;
+            margin: 0 .2em .5em;
+            padding: .2em .5em;
+            position: relative;
+        }
+        /* If the tree represents DOM structure */
+        .tree code {
+            font-family: monaco, Consolas, 'Lucida Console', monospace;
+        }
+
+            /* | */
+            .tree ul:before,
+            .tree code:before,
+            .tree spa:before {
+                outline: solid 1px #666;
+                content: "";
+                height: .5em;
+                left: 50%;
+                position: absolute;
+            }
+            .tree ul:before {
+                top: -.5em;
+            }
+            .tree code:before,
+            .tree spa:before {
+                top: -.55em;
+            }
+
+/* The root node doesn't connect upwards */
+.tree > li {margin-top: 0;}
+    .tree > li:before,
+    .tree > li:after,
+    .tree > li > code:before,
+    .tree > li > span:before {
+      outline: none;
+    }

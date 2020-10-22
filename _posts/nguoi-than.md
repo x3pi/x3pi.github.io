@@ -4,6 +4,8 @@ date: 2019-09-07 02:50:01 +07:00
 tags:
 - life
 layout: post
+permalink:  "/nguoi"
+
 ---
 
 Chuyện dài lắm nhưng tóm tắt thế này thôi. Trước kia là con ngoan trò giỏi nhưng cuối cùng bị đuổi học, thất nghiệp ở nhà chỉ ngồi máy tính suốt ngày. Bị sốc tâm lý toàn tập. Áp lực xã hội thì rõ rồi đó. Và ngay cả những người thân của mình cũng đối xử với mình khác. Mong muốn bố mẹ hiểu mình nhưng họ chịu áp lực xã hội cũng suy sụp tình thần rồi cũng gây áp lực lên mình. Nhiều khi nghe mẹ nói mà mình phát khóc còn nói: "Một lúc nào đó con đi con sẽ không về cái nhà này nữa". Nhưng ở nhà bố mẹ vẫn nuôi mình không bắt mình phải làm gì cho ngồi máy tính cả ngày nghĩ lại mình may mắn thật.

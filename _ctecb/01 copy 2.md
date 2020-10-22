@@ -1,5 +1,5 @@
 ---
-title: Có thể em chưa biết 01
+title: Có thể em chưa biết 012
 layout: post
 tags:
 - linear algebra done right
