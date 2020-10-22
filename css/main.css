@@ -34,7 +34,7 @@ body {
 img {
     max-width: 95%;
 }
-
+/* Topnav */
 .topnav {
     overflow: hidden;
     background-color: #fff;
@@ -53,10 +53,6 @@ img {
 }
 
 
-#topnavc {
-    display: inline-block;
-}
-
 .topnav a {
     float: left;
     display: block;
@@ -71,15 +67,11 @@ img {
     color: black;
 }
 
+
 .topnav a.active {
-    /*background-color: #009933;*/
     color: #009933;
 }
 
-.topnav .icon {
-    background: #fff;
-    display: none;
-}
 
 
 

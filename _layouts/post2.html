@@ -54,12 +54,49 @@ layout: default2
 
 </script>
 
-<link rel="stylesheet" href="{{ " /css/main.css " | prepend: site.baseurl }}">
+<style>
+  .topnav {
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 5px 5px 5px 15px;
+    text-align: center;
+    max-width: 900px;
+    border-bottom: 1px solid #dee2e6 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+  .ava {
+    display: flex !important;
+    align-items: center !important;
+  }
+
+
+  .topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+  .topnav a.active {
+    color: #009933;
+  }
+</style>
 
 <div class=" topnav">
 
   <div class="ava">
-    <img  id="Capa_1" height ="35px"  width ="35px"  src="/assets/svg/cloudy.svg">
+    <img id="Capa_1" height="35px" width="35px" src="/assets/svg/cloudy.svg">
 
     <a href="/" id="home" style="color: #9B5DE5; font-size: 20px;" class="text-capitalize font-weight-bold mb-0">Van
       Phuc</a>
