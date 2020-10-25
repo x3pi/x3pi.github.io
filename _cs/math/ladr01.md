@@ -1,8 +1,9 @@
 ---
-title: LADR - Vector Spaces
+title: "Vector Spaces"
 layout: post2
 tags:
-- linear algebra done right
+- LADR
+- Math
 active: "cs"
 order: 1
 libjs: 

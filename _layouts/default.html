@@ -19,10 +19,22 @@
     </script>
   <script>
     MathJax = {
+      options: {
+        enableMenu: false
+      },
       tex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ["\\[", "\\]"]]
       },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          MathJax.startup.promise.then(() => {
+            if (typeof mind != "undefined") { mind.linkDiv() }
+            console.log('MathJax initial typesetting complete');
+          });
+        }
+      }
     };
   </script>
 </body>

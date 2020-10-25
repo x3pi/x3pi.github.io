@@ -19,11 +19,14 @@
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ["\\[", "\\]"]]
       },
+      options: {
+        enableMenu: false
+      },
       startup: {
         ready: () => {
           MathJax.startup.defaultReady();
           MathJax.startup.promise.then(() => {
-            if (!mind == false){mind.linkDiv()}
+            if (typeof mind != "undefined") { mind.linkDiv() }
             console.log('MathJax initial typesetting complete');
           });
         }

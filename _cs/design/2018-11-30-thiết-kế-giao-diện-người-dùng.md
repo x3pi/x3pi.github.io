@@ -5,6 +5,10 @@ layout: post
 tags:
 - design
 - note
+published: false
+order: 1.5
+
+
 
 ---
 * Khác biệt UI và GUI
