@@ -8,6 +8,7 @@ active: "cs"
 order: 1
 libjs: 
 published: true
+hidden:
 
 ---
 <script>

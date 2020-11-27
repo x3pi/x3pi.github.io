@@ -10,12 +10,20 @@ layout: default
   <a  href onclick="filter('{{ t }}'); return false;">{{ t }}</a>
   {% endfor %}
 </div>
+<div>
+  <div class="kw">
+    <a href onclick="filter('Math')">Math</a>
+    <a href onclick="filter('GCP')">GCP</a>
+    <a href onclick="filter('GCP')">GCP</a>
+  </div>
+</div>
 -->
 
 
 <div class="view_year">
   {% assign sorted_pages = site.cs  | sort:"order" | reverse %}
   {% for post in sorted_pages %}
+  {% if post.hidden != true %}
   <div class="materials-item">
     <div class="tt">
       <a href="{{ post.url }}">{{ post.title }}</a>
@@ -26,6 +34,7 @@ layout: default
       {% endfor %}
     </div>
   </div>
+  {% endif %}
   {% endfor %}
 </div>
 
@@ -41,12 +50,10 @@ layout: default
 <div class="{{ tag }} tag ">
   <div class="">
 
-    <div class="">
       {% assign sorted_pages = site.cs  | sort:"order" | reverse %}
       {% for post in sorted_pages %}
       {% if post.tags contains tag %}
-      <div class="">
-
+        {% if post.hidden != true %}
         <div class="materials-item">
           <div class="tt">
             <a href="{{ post.url }}">{{ post.title }}</a>
@@ -59,14 +66,9 @@ layout: default
             {% endfor %}
           </div>
         </div>
-      </div>
-
+        {% endif %}
       {% endif %}
-
       {% endfor %}
-
-    </div>
-
   </div>
 </div>
 
@@ -83,6 +85,27 @@ layout: default
     document.getElementsByClassName(view)[0].style.display = "none";
     view = tag;
     document.getElementsByClassName(tag)[0].style.display = "inline";
+    history.replaceState(null, null, "?tag=" + tag);
+  }
+
+  var parseQueryString = function () {
+
+    var str = window.location.search;
+    var objURL = {}
+
+    str.replace(
+      new RegExp("([^?=&]+)(=([^&]*))?", "g"),
+      function ($0, $1, $2, $3) {
+        objURL[$1] = $3
+      }
+    );
+    return objURL
+  };
+
+  //Example how to use it: 
+  var params = parseQueryString()
+  if (params["tag"]) {
+    filter(params["tag"]);
   }
 
 </script>

@@ -176,6 +176,9 @@ hr {
 }
 
 
+
+
+
 /* Custom CSS rules for content */
 
 .embedded-video {
@@ -1081,4 +1084,12 @@ hr {
 
 .MathJax {
     pointer-events: none;
+}
+
+
+.box {
+    margin-top: 20px;
+    box-shadow: 0 0 10px #eee;
+    border: 1px solid #dee2e6!important;
+    padding: 15px;
 }
