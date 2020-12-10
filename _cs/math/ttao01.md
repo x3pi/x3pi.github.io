@@ -2,8 +2,8 @@
 title: "Measure Theory"
 layout: post2
 tags:
-- Terence Tao
-- Math
+- terence tao
+- math
 active: "cs"
 order: 4
 libjs: 

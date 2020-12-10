@@ -2,9 +2,9 @@
 title: "Thiết kế đường ống dữ liệu"
 layout: post2
 tags:
-- GCP
+- gcp
 active: "cs"
-order: 6
+order: 7
 libjs: 
 published: true
 

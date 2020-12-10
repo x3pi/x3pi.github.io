@@ -2,11 +2,11 @@
 title: "AI với Google Cloud"
 layout: post2
 tags:
-- GCP
+- gcp
 active: "cs"
-order: 8
+order: 9
 libjs: 
-published: true
+published: false
 
 ---
 <script>

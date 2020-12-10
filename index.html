@@ -19,7 +19,6 @@ layout: default
 </div>
 -->
 
-
 <div class="view_year">
   {% assign sorted_pages = site.cs  | sort:"order" | reverse %}
   {% for post in sorted_pages %}
@@ -38,14 +37,9 @@ layout: default
   {% endfor %}
 </div>
 
-
-
-
 {% assign tags =  site.cs | map: 'tags' | join: ','  | split: ',' | uniq %}
 
 {% for tag in tags %}
-
-
 
 <div class="{{ tag }} tag ">
   <div class="">
@@ -74,10 +68,8 @@ layout: default
 
 {% endfor %}
 
-
 </div>
 </div>
-
 
 <script>
   var view = "view_year";

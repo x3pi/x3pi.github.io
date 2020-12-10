@@ -34,7 +34,9 @@ body {
 img {
     max-width: 95%;
 }
+
 /* Topnav */
+
 .topnav {
     overflow: hidden;
     background-color: #fff;
@@ -47,11 +49,10 @@ img {
     justify-content: space-between!important;
 }
 
-.ava{
+.ava {
     display: flex!important;
     align-items: center!important;
 }
-
 
 .topnav a {
     float: left;
@@ -67,13 +68,9 @@ img {
     color: black;
 }
 
-
 .topnav a.active {
     color: #009933;
 }
-
-
-
 
 h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
@@ -127,7 +124,6 @@ hr {
     overflow: visible;
 }
 
-
 /* Utility */
 
 .wrap:before, .wrap:after {
@@ -145,7 +141,6 @@ hr {
     margin: 0 auto;
     zoom: 1;
 }
-
 
 /* Layout Styles */
 
@@ -169,15 +164,12 @@ hr {
     display: block;
     padding: 3px;
 }
-.materials-item  {
+
+.materials-item {
     margin-top: 20px;
     box-shadow: 0 0 10px #eee;
     border: 1px solid #dee2e6!important;
 }
-
-
-
-
 
 /* Custom CSS rules for content */
 
@@ -224,7 +216,6 @@ hr {
     color: #575651;
     text-align: justify;
 }
-
 
 .tt {
     font-size: 20px;
@@ -295,13 +286,12 @@ hr {
     letter-spacing: -.5px;
 }
 
-
 /* Page Content styles */
 
 /* ----------------------------------------------------------*/
 
 .page-content {
-    padding: 30px 0;
+    padding: 0px 0;
 }
 
 /* Home styles */
@@ -851,7 +841,6 @@ hr {
 
 /* ----------------------------------------------------------*/
 
-
 @media screen and (max-width: 650px) {
     #bfloat {
         display: block;
@@ -918,7 +907,6 @@ hr {
     .post-content ul, .post-content ol {
         padding-left: 10px;
     }
-
 }
 
 .icon>svg {
@@ -930,29 +918,34 @@ hr {
 }
 
 @media print {
-
     .fb-comments, .interactive, .topnav {
         display: none !important;
     }
     #disqus_thread {
         display: none !important;
     }
-    
-    .break {page-break-after: always;}
-    
-/*
+    .break {
+        page-break-after: always;
+    }
+    /*
     .grid>.card {
         width: 540px !important;
     }
     */
+    .iprint * {
+        visibility: visible;
+    }
+    body * {
+        visibility: hidden;
+    }
 }
 
 /*CodeSnippets*/
 
 .language-js {
     margin-top: 8px;
-
 }
+
 .snippet-console {
     margin: 0px 0 0px 0;
     min-height: 24px;
@@ -1004,8 +997,8 @@ hr {
 
 /*Tree*/
 
-
 /* It's supposed to look like a tree diagram */
+
 .tree, .tree ul, .tree li {
     list-style: none;
     margin: 0;
@@ -1017,79 +1010,291 @@ hr {
     margin: 0 0 1em;
     text-align: center;
 }
+
 .tree, .tree ul {
     display: table;
 }
+
 .tree ul {
-  width: 100%;
+    width: 100%;
 }
-    .tree li {
-        display: table-cell;
-        padding: .5em 0;
-        vertical-align: top;
-    }
-        /* _________ */
-        .tree li:before {
-            outline: solid 1px #666;
-            content: "";
-            left: 0;
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        .tree li:first-child:before {left: 50%;}
-        .tree li:last-child:before {right: 50%;}
 
-        .tree code, .tree spa {
-            border: solid .1em #666;
-            border-radius: .2em;
-            display: inline-block;
-            margin: 0 .2em .5em;
-            padding: .2em .5em;
-            position: relative;
-        }
-        /* If the tree represents DOM structure */
-        .tree code {
-            font-family: monaco, Consolas, 'Lucida Console', monospace;
-        }
+.tree li {
+    display: table-cell;
+    padding: .5em 0;
+    vertical-align: top;
+}
 
-            /* | */
-            .tree ul:before,
-            .tree code:before,
-            .tree spa:before {
-                outline: solid 1px #666;
-                content: "";
-                height: .5em;
-                left: 50%;
-                position: absolute;
-            }
-            .tree ul:before {
-                top: -.5em;
-            }
-            .tree code:before,
-            .tree spa:before {
-                top: -.55em;
-            }
+/* _________ */
+
+.tree li:before {
+    outline: solid 1px #666;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.tree li:first-child:before {
+    left: 50%;
+}
+
+.tree li:last-child:before {
+    right: 50%;
+}
+
+.tree code, .tree spa {
+    border: solid .1em #666;
+    border-radius: .2em;
+    display: inline-block;
+    margin: 0 .2em .5em;
+    padding: .2em .5em;
+    position: relative;
+}
+
+/* If the tree represents DOM structure */
+
+.tree code {
+    font-family: monaco, Consolas, 'Lucida Console', monospace;
+}
+
+/* | */
+
+.tree ul:before, .tree code:before, .tree spa:before {
+    outline: solid 1px #666;
+    content: "";
+    height: .5em;
+    left: 50%;
+    position: absolute;
+}
+
+.tree ul:before {
+    top: -.5em;
+}
+
+.tree code:before, .tree spa:before {
+    top: -.55em;
+}
 
 /* The root node doesn't connect upwards */
-.tree > li {margin-top: 0;}
-    .tree > li:before,
-    .tree > li:after,
-    .tree > li > code:before,
-    .tree > li > span:before {
-      outline: none;
-    }
 
-    /**/
+.tree>li {
+    margin-top: 0;
+}
+
+.tree>li:before, .tree>li:after, .tree>li>code:before, .tree>li>span:before {
+    outline: none;
+}
+
+/**/
 
 .MathJax {
     pointer-events: none;
 }
-
 
 .box {
     margin-top: 20px;
     box-shadow: 0 0 10px #eee;
     border: 1px solid #dee2e6!important;
     padding: 15px;
+}
+
+/** admonition **/
+
+@media print {
+    .bd-toc {
+        display: none !important;
+    }
+    .col-md-9 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+.admonition {
+    /* margin: 1.5625em auto;*/
+    padding: 0 .6rem .8rem!important;
+    overflow: hidden;
+    page-break-inside: avoid;
+    border-left: .2rem solid #007bff;
+    border-radius: .1rem;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .05), 0 0 .05rem rgba(0, 0, 0, .1);
+    transition: color .25s, background-color .25s, border-color .25s
+}
+
+.admonition :last-child {
+    margin-bottom: 0
+}
+
+.admonition p.admonition-title~* {
+    padding: 0 1.4rem
+}
+
+.admonition>ol, .admonition>ul {
+    margin-left: 1em
+}
+
+.admonition .admonition-title {
+    position: relative;
+    margin: 0 -.6rem!important;
+    padding: .4rem .6rem .4rem 2.5rem;
+    font-weight: 700;
+    background-color: rgba(68, 138, 255, .1)
+}
+
+.admonition .admonition-title:before {
+    position: absolute;
+    left: .6rem;
+    width: 1rem;
+    height: 1rem;
+    color: #007bff;
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    content: ""
+}
+
+.admonition .admonition-title+* {
+    margin-top: .4em
+}
+
+.admonition.attention {
+    border-color: #fd7e14
+}
+
+.admonition.attention .admonition-title {
+    background-color: #ffedcc
+}
+
+.admonition.attention .admonition-title:before {
+    color: #fd7e14;
+    content: ""
+}
+
+.admonition.caution {
+    border-color: #fd7e14
+}
+
+.admonition.caution .admonition-title {
+    background-color: #ffedcc
+}
+
+.admonition.caution .admonition-title:before {
+    color: #fd7e14;
+    content: ""
+}
+
+.admonition.warning {
+    border-color: #dc3545
+}
+
+.admonition.warning .admonition-title {
+    background-color: #fdf3f2
+}
+
+.admonition.warning .admonition-title:before {
+    color: #dc3545;
+    content: ""
+}
+
+.admonition.danger {
+    border-color: #dc3545
+}
+
+.admonition.danger .admonition-title {
+    background-color: #fdf3f2
+}
+
+.admonition.danger .admonition-title:before {
+    color: #dc3545;
+    content: ""
+}
+
+.admonition.error {
+    border-color: #dc3545
+}
+
+.admonition.error .admonition-title {
+    background-color: #fdf3f2
+}
+
+.admonition.error .admonition-title:before {
+    color: #dc3545;
+    content: ""
+}
+
+.admonition.hint {
+    border-color: #ffc107
+}
+
+.admonition.hint .admonition-title {
+    background-color: #fff6dd
+}
+
+.admonition.hint .admonition-title:before {
+    color: #ffc107;
+    content: ""
+}
+
+.admonition.tip {
+    border-color: #ffc107
+}
+
+.admonition.tip .admonition-title {
+    background-color: #fff6dd
+}
+
+.admonition.tip .admonition-title:before {
+    color: #ffc107;
+    content: ""
+}
+
+.admonition.important {
+    border-color: #007bff
+}
+
+.admonition.important .admonition-title {
+    background-color: #e7f2fa
+}
+
+.admonition.important .admonition-title:before {
+    color: #007bff;
+    content: ""
+}
+
+.admonition.note {
+    border-color: #007bff
+}
+
+.admonition.note .admonition-title {
+    background-color: #e7f2fa
+}
+
+.admonition.note .admonition-title:before {
+    color: #007bff;
+    content: ""
+}
+
+.admonition.definition {
+    border-color: #007bff;
+}
+
+.admonition.definition .admonition-title {
+    background-color: #e7f2fa
+}
+
+.admonition.definition .admonition-title:before {
+    color: #007bff;
+    content: ""
+}
+
+
+/**quote**/
+
+#quote{
+    padding: 14px 16px;
 }

@@ -2,9 +2,9 @@
 title: "Lựa chọn công nghệ lưu trữ phù hợp"
 layout: post2
 tags:
-- GCP
+- gcp
 active: "cs"
-order: 5
+order: 6
 libjs: 
 published: true
 

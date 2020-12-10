@@ -2,10 +2,10 @@
 title: "Vector Spaces"
 layout: post2
 tags:
-- LADR
-- Math
+- lard
+- math
 active: "cs"
-order: 1
+order: 3
 libjs: 
 published: true
 hidden:

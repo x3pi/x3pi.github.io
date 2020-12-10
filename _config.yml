@@ -11,6 +11,9 @@ collections:
   cs:
     title: cs
     output: true
+  note:
+    title: note
+    output: true
   ctecb:
     title: ctecb
     output: true

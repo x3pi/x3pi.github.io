@@ -2,9 +2,9 @@
 title: "Thiết kế giải pháp xử lý dữ liệu"
 layout: post2
 tags:
-- GCP
+- gcp
 active: "cs"
-order: 7
+order: 8
 libjs: 
 published: true
 

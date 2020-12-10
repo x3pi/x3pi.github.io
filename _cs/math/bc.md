@@ -1,14 +1,14 @@
 ---
-title: "Tối ưu hóa lồi"
+title: "Làm chủ blockchain"
 layout: post
 tags:
 - coop
 - math
 active: "cs"
-order: 10
+order: 9
 libjs: 
-published: true
-hidden:
+published: false
+hidden: true
 
 ---
 
@@ -44,7 +44,7 @@ Tối ưu hóa di chuyển nhanh chóng như một lĩnh vực. Nhưng vẫn cò
 12. Phương pháp điểm bên trong
 
 
-### Danh sách code tôi thực hiện trên Kaggle:
+### Danh sách mã tôi thực hiện trên Kaggle:
 
 
 1. [Least-squares](https://www.kaggle.com/phucpv/least-squares)
@@ -54,8 +54,3 @@ Tối ưu hóa di chuyển nhanh chóng như một lĩnh vực. Nhưng vẫn cò
 5. []()
 6. []()
 7. []()
-
-## Tham khảo
-
-1. []()
-2. []()
