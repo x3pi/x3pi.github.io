@@ -77,8 +77,7 @@ hidden:
         object-fit: cover;
         width: 100%;
         height: 100%;
-        border: 1px solid black;
-        box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+        border: 1px solid #dee2e6;
     }
     
 </style>
