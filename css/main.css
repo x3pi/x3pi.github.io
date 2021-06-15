@@ -935,9 +935,9 @@ hr {
     .iprint * {
         visibility: visible;
     }
-    body * {
+    /* body * {
         visibility: hidden;
-    }
+    } */
 }
 
 /*CodeSnippets*/
