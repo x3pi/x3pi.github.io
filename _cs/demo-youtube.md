@@ -16,4 +16,4 @@ hidden:
 [http://video.x3pi.com/](http://video.x3pi.com/)
 
 Lưu ý đây là bản demo nên chưa xử lý dữ phân tích liệu cũng như kiểm duyệt nội dung upload.
-Nó là hệ thống microservice chạy trên một cụm GKE 1node g1-small, 1 core, ram 1G.
+Nó là hệ thống microservice chạy trên một cụm GKE 1 node g1-small, 1 core, ram 1G.
