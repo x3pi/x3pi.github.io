@@ -20,6 +20,9 @@ collections:
   language:
     title: language
     output: true
+  tool:
+    title: tool
+    output: true
 email: x2p3141@gmail.com
 facebook: xx3pi
 description: My blog
