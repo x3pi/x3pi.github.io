@@ -143,12 +143,12 @@ color: #000;
         <div class="card__body | flow">
           <div class="card__headline | cluster">
             <div>
-              <h2>Data Refinery (Hybrid)</h2>
+              <h2>Extended Relational</h2>
               <h3>Tham khảo cho Data Analytics</h3>
             </div>
           </div>
           <p class="card__description">
-             Kiến trúc tham chiếu này là sự kết hợp của các kỹ thuật quan hệ và không quan hệ. Phần không quan hệ hoạt động như một ETL để tinh chỉnh dữ liệu bán và không có cấu trúc và tải nó đã được làm sạch vào kho dữ liệu quan hệ để phân tích thêm.
+             Mặc dù kiến ​​trúc tham chiếu này hoàn toàn dựa trên các nguyên tắc mô hình quan hệ và DBMS dựa trên SQL, nhưng nó sử dụng chuyên sâu các kỹ thuật MPP và In-Memory để cải thiện khả năng mở rộng và khả năng mở rộng.
           </p>
           <img src="/assets/pictures/big-data/big-data-02.png" />
           <h3>Các hệ quả:</h3>
@@ -384,7 +384,7 @@ color: #000;
             <b>★★ Hiệu suất</b> - hiệu suất thay đổi đáng kể từ lần triển khai này sang lần triển khai tiếp theo, nhưng nhìn chung không nhanh bằng cơ sở dữ liệu Khóa-Giá trị<br/>
             <b>★★★ Khả năng mở rộng</b> - hơn 100 tổ chức điều hành các cụm với hơn 100 nút. Một số cụm vượt quá 1.000 nút<br/>
             <b>★★★ Tính khả dụng</b> - tính sẵn sàng cao được cung cấp bằng cách phân cụm và nhân rộng<br/>
-            <b>★ ½ A Ad-hoc analysis</b> - tốt hơn một chút so với các họ NoSQL khác, nhưng vẫn không tốt bằng cơ sở dữ liệu quan hệ hoặc công cụ truy vấn tương tác<br/>
+            <b>★ ½ Ad-hoc analysis</b> - tốt hơn một chút so với các họ NoSQL khác, nhưng vẫn không tốt bằng cơ sở dữ liệu quan hệ hoặc công cụ truy vấn tương tác<br/>
           </p>
           <h3>Ví dụ triển khai</h3>
           <p class="card__description">
