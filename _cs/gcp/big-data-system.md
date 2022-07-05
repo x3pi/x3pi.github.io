@@ -150,7 +150,7 @@ color: #000;
           <p class="card__description">
              Kiến trúc tham chiếu này là sự kết hợp của các kỹ thuật quan hệ và không quan hệ. Phần không quan hệ hoạt động như một ETL để tinh chỉnh dữ liệu bán và không có cấu trúc và tải nó đã được làm sạch vào kho dữ liệu quan hệ để phân tích thêm.
           </p>
-          <img src="/assets/pictures/big-data/big-data-03.png" />
+          <img src="/assets/pictures/big-data/big-data-02.png" />
           <h3>Các hệ quả:</h3>
           <p class="card__description">
             <b>★★★ Ad-hoc analysis</b> - hỗ trợ các truy vấn đọc thời gian thực đặc biệt phức tạp<br/>
