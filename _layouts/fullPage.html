@@ -1,0 +1,111 @@
+---
+layout: default2
+---
+<script src="https://cdn.jsdelivr.net/npm/regenerator-runtime"></script>
+<link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css"  />
+<script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+<script src="{{ " /js/MindElixir.js " | prepend: site.baseurl }}"></script>
+<script>
+  var MindElixirRender = function (id, data){
+    let mind = new MindElixir({
+          el: id,
+          direction: MindElixir.SIDE,
+          // create new map data
+          data: MindElixir.new('new topic'),
+          // or set as data that is return from `.getAllData()`
+          data: data,
+          draggable: true, // default true
+          contextMenu: true, // default true
+          toolBar: true, // default true
+          nodeMenu: true, // default true
+          keypress: true, // default true
+          locale: 'en', // [zh_CN,zh_TW,en,ja]
+          contextMenuOption: {
+            focus: true,
+            link: true
+          },
+          allowUndo: false,
+          before: {
+            insertSibling(el, obj) {
+              return true
+            },
+            async addChild(el, obj) {
+              return true
+            },
+          },
+        })
+        mind.init()
+        setTimeout(function () {
+          mind.linkDiv()
+        }, 1000)
+  }
+
+
+</script>
+
+<div class="post">
+  <article class="post-content">
+    <style>
+      #map{
+        height: 800px;
+        width: 100%;
+
+      }
+     
+    </style>
+    {{ content }}
+  </article>
+
+</div>
+
+
+<style>
+  .topnav {
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 5px 5px 5px 15px;
+    text-align: center;
+    max-width: 900px;
+    border-bottom: 1px solid #dee2e6 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+  .ava {
+    display: flex !important;
+    align-items: center !important;
+  }
+
+
+  .topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+  .topnav a.active {
+    color: #009933;
+  }
+</style>
+
+<div class=" topnav">
+
+  <div class="ava">
+    <img id="Capa_1" height="35px" width="35px" src="/assets/svg/cloudy.svg">
+
+    <a href="/" id="home" style="color: #9B5DE5; font-size: 20px;" class="text-capitalize font-weight-bold mb-0">Van
+      Phuc</a>
+  </div>
+  <a href="/" class="text-dark" id="about">About</a>
+
+</div>
