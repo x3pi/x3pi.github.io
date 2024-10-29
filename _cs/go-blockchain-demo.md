@@ -14,4 +14,4 @@ hidden:
 ## Go Blockchain Demo
 
 Demo những điều cơ bản tạo nên một blockchain
-[https://github.com/x3pi/go-blockchain-demo/]([https://3000word.x3pi.com/](https://github.com/x3pi/go-blockchain-demo/))
+[https://github.com/x3pi/go-blockchain-demo/](https://github.com/x3pi/go-blockchain-demo/)
