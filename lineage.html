@@ -1,0 +1,448 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phan Sci-Fi Lineage · Phả Hệ Tương Lai</title>
+  <meta name="description" content="Hệ thống gia phả Sci-Fi 20 đời họ Phan - Futuristic Family Lineage System">
+  <link rel="icon" href="/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #050a15;
+      color: #e0faff;
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Animated starfield background */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(1px 1px at 20% 30%, #ffffff33, transparent),
+        radial-gradient(1px 1px at 40% 70%, #ffffff22, transparent),
+        radial-gradient(1px 1px at 60% 20%, #ffffff11, transparent),
+        radial-gradient(1px 1px at 80% 50%, #ffffff22, transparent),
+        radial-gradient(1.5px 1.5px at 10% 80%, #00f0ff33, transparent),
+        radial-gradient(1.5px 1.5px at 90% 10%, #ff69b422, transparent);
+      background-size: 200px 200px, 150px 150px, 250px 250px, 180px 180px, 300px 300px, 280px 280px;
+      animation: drift 60s linear infinite;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    @keyframes drift {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-200px); }
+    }
+
+    /* Header */
+    .header {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 40px 20px 20px;
+      border-bottom: 1px solid #00f0ff22;
+    }
+
+    .header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(1.4rem, 4vw, 2.4rem);
+      font-weight: 900;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, #00f0ff, #007acc, #ff69b4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: none;
+      margin-bottom: 8px;
+    }
+
+    .header p {
+      font-size: clamp(0.75rem, 2vw, 0.95rem);
+      color: #007acc;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 400;
+    }
+
+    /* SVG Container */
+    .lineage-container {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 20px auto 0;
+      padding: 0 10px;
+    }
+
+    .lineage-container svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 0 20px #00f0ff11);
+    }
+
+    /* Footer */
+    .footer {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 30px 20px 50px;
+      border-top: 1px solid #00f0ff11;
+    }
+
+    .footer a {
+      color: #007acc;
+      text-decoration: none;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      transition: color 0.3s;
+    }
+
+    .footer a:hover { color: #00f0ff; }
+
+    .footer .copy {
+      margin-top: 10px;
+      font-size: 0.7rem;
+      color: #334466;
+      letter-spacing: 2px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .header { padding: 25px 15px 15px; }
+      .lineage-container { padding: 0 5px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Phan Lineage</h1>
+    <p>Sci-Fi Generational System · 20 Generations</p>
+  </header>
+
+  <main class="lineage-container">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 2600" preserveAspectRatio="xMidYMin meet" style="background-color: #050a15;">
+      <defs>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0a1931" stroke-width="0.5"/>
+        </pattern>
+        <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.8" />
+          <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.2" />
+          <stop offset="100%" stop-color="#050a15" stop-opacity="0" />
+        </radialGradient>
+        <filter id="neon" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="3" result="blur" />
+          <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+
+      <rect width="100%" height="100%" fill="url(#grid)" />
+
+      <!-- Central Data Stream -->
+      <path d="M 400 160 L 400 2500" stroke="#00d5ff" stroke-width="2" opacity="0.4" stroke-dasharray="10,5"/>
+      <path d="M 390 160 L 390 2500" stroke="#007acc" stroke-width="1" opacity="0.5"/>
+      <path d="M 410 160 L 410 2500" stroke="#007acc" stroke-width="1" opacity="0.5"/>
+
+      <!-- ====== PROGENITOR ====== -->
+      <g transform="translate(310, 80)">
+        <circle r="50" fill="url(#nodeGlow)"/>
+        <circle r="38" fill="none" stroke="#00f0ff" stroke-width="3" filter="url(#neon)"/>
+        <circle r="45" fill="none" stroke="#007acc" stroke-width="1" stroke-dasharray="4,4"/>
+        <rect x="-110" y="-22" width="220" height="44" fill="#001428" stroke="#00f0ff" stroke-width="1.5" rx="5" filter="url(#neon)"/>
+        <text x="0" y="-5" font-family="'Courier New', monospace" font-size="11" fill="#00d5ff" text-anchor="middle" letter-spacing="2">PROGENITOR</text>
+        <text x="0" y="14" font-family="'Arial', sans-serif" font-weight="bold" font-size="15" fill="#ffffff" text-anchor="middle" letter-spacing="1">PHAN VĂN PHÚC</text>
+      </g>
+
+      <!-- SPOUSE NODE -->
+      <g transform="translate(530, 80)">
+        <circle r="50" fill="url(#nodeGlow)"/>
+        <circle r="38" fill="none" stroke="#ff69b4" stroke-width="2" filter="url(#neon)"/>
+        <circle r="45" fill="none" stroke="#cc5599" stroke-width="1" stroke-dasharray="4,4"/>
+        <rect x="-100" y="-22" width="200" height="44" fill="#1a0a14" stroke="#ff69b4" stroke-width="1.5" rx="5" filter="url(#neon)"/>
+        <text x="0" y="-5" font-family="'Courier New', monospace" font-size="11" fill="#ff69b4" text-anchor="middle" letter-spacing="2">SPOUSE</text>
+        <text x="0" y="14" font-family="'Arial', sans-serif" font-weight="bold" font-size="20" fill="#ffb6d9" text-anchor="middle">?</text>
+      </g>
+      <line x1="360" y1="80" x2="480" y2="80" stroke="#ff69b4" stroke-width="1.5" stroke-dasharray="6,3" filter="url(#neon)"/>
+
+      <!-- PHASE I: GENESIS -->
+      <text x="400" y="158" font-family="'Courier New'" font-size="11" fill="#00d5ff" opacity="0.6" text-anchor="middle" letter-spacing="3">━━ PHASE I : GENESIS ━━</text>
+
+      <!-- GEN 01 - LUNA -->
+      <g transform="translate(0, 195)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 01</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">LUNA</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#e0faff" text-anchor="middle">♂ Phan Luna Bảo</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Luna Ngọc</text>
+      </g>
+
+      <!-- GEN 02 - NOVA -->
+      <g transform="translate(0, 290)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 02</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">NOVA</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#c4eaff" text-anchor="middle">♂ Phan Nova Khôi</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Nova Yên</text>
+      </g>
+
+      <!-- GEN 03 - ZEN -->
+      <g transform="translate(0, 385)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 03</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">ZEN</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#e0faff" text-anchor="middle">♂ Phan Zen Phong</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Zeno Hân</text>
+      </g>
+
+      <!-- GEN 04 - SONAN -->
+      <g transform="translate(0, 480)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 04</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">SONAN</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#c4eaff" text-anchor="middle">♂ Phan Sonan Minh</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Sonan Đan</text>
+      </g>
+
+      <!-- GEN 05 - LYRA -->
+      <g transform="translate(0, 575)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 05</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">LYRA</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#e0faff" text-anchor="middle">♂ Phan Lyra Đạt</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Lyra Diệp</text>
+      </g>
+
+      <!-- PHASE II: EXPLORATION -->
+      <text x="400" y="670" font-family="'Courier New'" font-size="11" fill="#00d5ff" opacity="0.6" text-anchor="middle" letter-spacing="3">━━ PHASE II : EXPLORATION ━━</text>
+
+      <!-- GEN 06 - AERO -->
+      <g transform="translate(0, 710)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 06</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">AERO</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#c4eaff" text-anchor="middle">♂ Phan Aero Kiệt</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Aera Ân</text>
+      </g>
+
+      <!-- GEN 07 - COSMO -->
+      <g transform="translate(0, 805)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 07</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">COSMO</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#e0faff" text-anchor="middle">♂ Phan Cosmo Hưng</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Cosmo Khuê</text>
+      </g>
+
+      <!-- GEN 08 - HALO -->
+      <g transform="translate(0, 900)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 08</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">HALO</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#c4eaff" text-anchor="middle">♂ Phan Halo Thịnh</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Halo Thư</text>
+      </g>
+
+      <!-- GEN 09 - PULAR -->
+      <g transform="translate(0, 995)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 09</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">PULAR</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#e0faff" text-anchor="middle">♂ Phan Pular Toàn</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Pular Quỳnh</text>
+      </g>
+
+      <!-- GEN 10 - ORION -->
+      <g transform="translate(0, 1090)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 10</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">ORION</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#c4eaff" text-anchor="middle">♂ Phan Orion Kiên</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Orion My</text>
+      </g>
+
+      <!-- PHASE III: TRANSCENDENCE -->
+      <text x="400" y="1185" font-family="'Courier New'" font-size="11" fill="#00d5ff" opacity="0.6" text-anchor="middle" letter-spacing="3">━━ PHASE III : TRANSCENDENCE ━━</text>
+
+      <!-- GEN 11 - ALINA -->
+      <g transform="translate(0, 1225)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 11</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">ALINA</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#e0faff" text-anchor="middle">♂ Phan Alina Nhân</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Alina Trâm</text>
+      </g>
+
+      <!-- GEN 12 - CORA -->
+      <g transform="translate(0, 1320)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 12</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">CORA</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#c4eaff" text-anchor="middle">♂ Phan Cora Dũng</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Cora Châu</text>
+      </g>
+
+      <!-- GEN 13 - NERO -->
+      <g transform="translate(0, 1415)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 13</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">NERO</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#e0faff" text-anchor="middle">♂ Phan Nero Thành</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Nera Uyên</text>
+      </g>
+
+      <!-- GEN 14 - MILO -->
+      <g transform="translate(0, 1510)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 14</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">MILO</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#c4eaff" text-anchor="middle">♂ Phan Milo Kỷ</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Milo Nhi</text>
+      </g>
+
+      <!-- GEN 15 - EZA -->
+      <g transform="translate(0, 1605)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 15</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">EZA</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#e0faff" text-anchor="middle">♂ Phan Eza Lâm</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Eza Linh</text>
+      </g>
+
+      <!-- PHASE IV: ETERNITY -->
+      <text x="400" y="1700" font-family="'Courier New'" font-size="11" fill="#00d5ff" opacity="0.6" text-anchor="middle" letter-spacing="3">━━ PHASE IV : ETERNITY ━━</text>
+
+      <!-- GEN 16 - ERA -->
+      <g transform="translate(0, 1740)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 16</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">ERA</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#c4eaff" text-anchor="middle">♂ Phan Era Khải</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Era Nhiên</text>
+      </g>
+
+      <!-- GEN 17 - AEON -->
+      <g transform="translate(0, 1835)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 17</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">AEON</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#e0faff" text-anchor="middle">♂ Phan Aeon Hào</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Aeon Bích</text>
+      </g>
+
+      <!-- GEN 18 - SOMA -->
+      <g transform="translate(0, 1930)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 18</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">SOMA</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#007acc" stroke-width="1"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#007acc" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#c4eaff" text-anchor="middle">♂ Phan Soma Bách</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Soma Lan</text>
+      </g>
+
+      <!-- GEN 19 - VELA -->
+      <g transform="translate(0, 2025)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.7">GEN 19</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.5">VELA</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="1" rx="3"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#e0faff" text-anchor="middle">♂ Phan Vela Trí</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" fill="#ffb6d9" text-anchor="middle">♀ Phan Vela Thanh</text>
+      </g>
+
+      <!-- GEN 20 - EON (Final) -->
+      <g transform="translate(0, 2120)">
+        <text x="55" y="5" font-family="'Courier New'" font-size="13" fill="#00f0ff" opacity="0.9" font-weight="bold">GEN 20</text>
+        <text x="745" y="5" font-family="'Courier New'" font-size="10" fill="#00f0ff" opacity="0.8">EON</text>
+        <path d="M 400 0 L 250 0 L 250 18" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neon)"/>
+        <path d="M 400 0 L 550 0 L 550 18" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neon)"/>
+        <rect x="160" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="2" rx="3" filter="url(#neon)"/>
+        <rect x="460" y="18" width="180" height="30" fill="#031122" stroke="#00f0ff" stroke-width="2" rx="3" filter="url(#neon)"/>
+        <text x="250" y="38" font-family="'Arial', sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">♂ Phan Eon Long</text>
+        <text x="550" y="38" font-family="'Arial', sans-serif" font-size="13" font-weight="bold" fill="#ffccee" text-anchor="middle">♀ Phan Eon Tiên</text>
+      </g>
+
+      <!-- Infinite End -->
+      <text x="400" y="2220" font-family="'Courier New'" font-size="10" fill="#007acc" opacity="0.4" text-anchor="middle" letter-spacing="5">∞  TO BE CONTINUED  ∞</text>
+      <path d="M 400 2240 L 400 2600" stroke="#00d5ff" stroke-width="1" opacity="0.15" stroke-dasharray="2,8"/>
+    </svg>
+  </main>
+
+  <footer class="footer">
+    <a href="/">← Back to Home</a>
+    <p class="copy">PHAN LINEAGE SYSTEM &middot; EST. 2026</p>
+  </footer>
+
+</body>
+</html>
